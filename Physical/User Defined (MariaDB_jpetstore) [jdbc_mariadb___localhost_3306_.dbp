@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1720000407683" createdUser="orest"
+    id="-1c433097:1907800f463:-7e5c"
+    selfDescribing="User Defined (MariaDB_jpetstore) [jdbc:mariadb://localhost:3306/jpetstore, jpetstore]"
+    type="database_connection_resource" updatedTimestamp="1721737009907"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig maxConnections="1" poolName="DefaultPoolName" transportName="MariaDB_jpetstore">
+        <connectionParams ZOSEnv="false"
+            dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+            dpsOption="false" dpsPass="#com.ghc.1!d877" dpsUser=""
+            driverClass="org.mariadb.jdbc.Driver"
+            password="#com.ghc.1!e5467E1A129F4ACC4471E34EA2F97228112855740CEA"
+            schema="" url="jdbc:mariadb://localhost:3306/jpetstore"
+            useSsl="false" user="jpetstore">
+            <dpsSsl useSsl="false"/>
+            <stubSettings maxProcCallCount="10000"
+                maxResultSetRowCount="10000" maxRowCount="10000"
+                password="#com.ghc.1!18beE357A2EB7262116255340CED6A4340E4"
+                procedureLearningBehaviour="1" schema="test1"
+                url="jdbc:mariadb://localhost:3306"
+                useIntegratedDB="true" useSsl="false" user="root"/>
+            <storedProcedureFilter catalogFilterEnabled="false"
+                catalogFilterPattern="" procedureFilterEnabled="false"
+                procedureFilterPattern="" schemaFilterEnabled="true"
+                schemaFilterPattern=""
+                storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false"
+                timestampFormattingEnabled="false" timestampPrecision="9"/>
+            <proxy proxyType="tcp.proxy.k8s" useProxy="false"/>
+        </connectionParams>
+    </resourceConfig>
+</editableResource>

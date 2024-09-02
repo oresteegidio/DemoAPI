@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1719412083456" createdUser="orest"
+    id="-2143ab61:19054eb5d68:-7ec2"
+    selfDescribing="localhost-8089-addNumbers-wsdl" type="wsdl_schema"
+    updatedTimestamp="1719412083456" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig schemaSourceTemplateName="WSDL">
+        <schemaSourceConfig sourceType="101" uri="C:\Users\orest\AppData\Local\Temp\localhost-8089-addNumbers-wsdl.url"/>
+    </resourceConfig>
+</editableResource>

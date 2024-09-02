@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1720081597737" createdUser="orest"
+    id="6d1aeb2b:1907cd90a48:-7e2d"
+    selfDescribing="User Defined (MariaDB_Nation) [jdbc:mariadb://localhost:3306/nation, root]"
+    type="database_connection_resource" updatedTimestamp="1721741994570"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig maxConnections="1" poolName="DefaultPoolName" transportName="MariaDB_Nation">
+        <connectionParams ZOSEnv="false"
+            dpsHost="http://&lt;hostname>:&lt;port>/api/v1/profile"
+            dpsOption="false" dpsPass="#com.ghc.1!e379" dpsUser=""
+            driverClass="org.mariadb.jdbc.Driver"
+            password="#com.ghc.1!3fbc4ADD4464E354A2F97266112155310CB9"
+            schema="" url="jdbc:mariadb://localhost:3306/nation"
+            useSsl="false" user="root">
+            <dpsSsl useSsl="false"/>
+            <stubSettings maxProcCallCount="10000"
+                maxResultSetRowCount="10000" maxRowCount="10000"
+                password="#com.ghc.1!0dbb7261117055300CAE6A4640B0210C7E17"
+                procedureLearningBehaviour="1" schema="test1"
+                url="jdbc:mariadb://localhost:3306/nation"
+                useIntegratedDB="false" useSsl="false" user="root"/>
+            <storedProcedureFilter catalogFilterEnabled="false"
+                catalogFilterPattern="" procedureFilterEnabled="false"
+                procedureFilterPattern="" schemaFilterEnabled="true"
+                schemaFilterPattern=""
+                storedProceduresRetrievalEnabled="false" useConnectionUsername="true"/>
+            <timestampFormatting timestampFormatZero="false"
+                timestampFormattingEnabled="false" timestampPrecision="9"/>
+            <proxy proxyType="tcp.proxy.k8s" useProxy="false"/>
+        </connectionParams>
+    </resourceConfig>
+</editableResource>

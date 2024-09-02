@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1721737090962" createdUser="orest"
+    id="-59195956:190dec1ce88:-7bbc" type="datbase_stub_resource"
+    updatedTimestamp="1721737091118" updatedUser="orest" version="1.1">
+    <loggingConfiguration debug="true" resultWriterLoggingLevel="FULL" writeStubEventsToDB="true"/>
+    <resourceConfig _version="1.1" persistent="false"
+        procCallMode="RETURN_FIRST_MATCH" procErrorMode="FAIL_ON_ERROR">
+        <snapshot>
+            <table colCount="3"
+                creationSql="CREATE TABLE APP.CATEGORY (&quot;catid&quot; VARCHAR(10) NOT NULL, &quot;name&quot; VARCHAR(80), &quot;descn&quot; VARCHAR(255), PRIMARY KEY (&quot;catid&quot;))"
+                name="CATEGORY" rowCount="1">
+                <rowHeader>
+                    <colHeader name="catid" type="VARCHAR(10)"/>
+                    <colHeader name="name" type="VARCHAR(80)"/>
+                    <colHeader name="descn" type="VARCHAR(255)"/>
+                </rowHeader>
+                <row>
+                    <col type="java.lang.String" value="FISH"/>
+                    <col type="java.lang.String" value="Fish"/>
+                    <col type="java.lang.String" value="&lt;image src=&quot;../images/fish_icon.gif&quot;>&lt;font size=&quot;5&quot; color=&quot;blue&quot;> Fish&lt;/font>"/>
+                </row>
+            </table>
+            <table colCount="1"
+                creationSql="CREATE TABLE APP.COM_IBM_STATEMENTS (STATEMENT CLOB)"
+                name="COM_IBM_STATEMENTS" rowCount="6">
+                <rowHeader>
+                    <colHeader name="STATEMENT" type="CLOB"/>
+                </rowHeader>
+                <row>
+                    <col length="84" type="java.sql.Clob"
+                        value="chunked" value0="     select PRODUCTID, NAME, DESCN, CATEGORY from PRODUCT where CATEGORY = 'FISH'   "/>
+                </row>
+                <row>
+                    <col length="68" type="java.sql.Clob"
+                        value="chunked" value0="     select CATID, NAME, DESCN from CATEGORY where CATID = 'FISH'   "/>
+                </row>
+                <row>
+                    <col length="231" type="java.sql.Clob"
+                        value="chunked" value0="     select       ITEMID, LISTPRICE, UNITCOST, SUPPLIER, I.PRODUCTID, NAME,       DESCN, CATEGORY, STATUS, ATTR1, ATTR2, ATTR3, ATTR4, ATTR5     from ITEM I, PRODUCT P where P.PRODUCTID = I.PRODUCTID and I.PRODUCTID = 'FI-FW-01'   "/>
+                </row>
+                <row>
+                    <col length="89" type="java.sql.Clob"
+                        value="chunked" value0="     select PRODUCTID, NAME, DESCN, CATEGORY from PRODUCT where PRODUCTID = 'FI-FW-01'   "/>
+                </row>
+                <row>
+                    <col length="65" type="java.sql.Clob"
+                        value="chunked" value0="     select QTY as value from INVENTORY where ITEMID = 'EST-4'   "/>
+                </row>
+                <row>
+                    <col length="269" type="java.sql.Clob"
+                        value="chunked" value0="     select       I.ITEMID, LISTPRICE, UNITCOST, SUPPLIER, I.PRODUCTID, NAME,       DESCN, CATEGORY, STATUS, ATTR1, ATTR2, ATTR3, ATTR4, ATTR5, QTY     from ITEM I, INVENTORY V, PRODUCT P where P.PRODUCTID = I.PRODUCTID and I.ITEMID = V.ITEMID and I.ITEMID = 'EST-4'   "/>
+                </row>
+            </table>
+            <table colCount="2"
+                creationSql="CREATE TABLE APP.INVENTORY (&quot;itemid&quot; VARCHAR(10) NOT NULL, &quot;qty&quot; INTEGER NOT NULL, PRIMARY KEY (&quot;itemid&quot;))"
+                name="INVENTORY" rowCount="1">
+                <rowHeader>
+                    <colHeader name="itemid" type="VARCHAR(10)"/>
+                    <colHeader name="qty" type="INTEGER"/>
+                </rowHeader>
+                <row>
+                    <col type="java.lang.String" value="EST-4"/>
+                    <col type="java.lang.Integer" value="10000"/>
+                </row>
+            </table>
+            <table colCount="11"
+                creationSql="CREATE TABLE APP.ITEM (&quot;itemid&quot; VARCHAR(10) NOT NULL, &quot;productid&quot; VARCHAR(10) NOT NULL, &quot;listprice&quot; DECIMAL(10,2), &quot;unitcost&quot; DECIMAL(10,2), &quot;supplier&quot; INTEGER, &quot;status&quot; VARCHAR(2), &quot;attr1&quot; VARCHAR(80), &quot;attr2&quot; VARCHAR(80), &quot;attr3&quot; VARCHAR(80), &quot;attr4&quot; VARCHAR(80), &quot;attr5&quot; VARCHAR(80), PRIMARY KEY (&quot;itemid&quot;))"
+                name="ITEM" rowCount="2">
+                <rowHeader>
+                    <colHeader name="itemid" type="VARCHAR(10)"/>
+                    <colHeader name="productid" type="VARCHAR(10)"/>
+                    <colHeader name="listprice" type="DECIMAL(10,2)"/>
+                    <colHeader name="unitcost" type="DECIMAL(10,2)"/>
+                    <colHeader name="supplier" type="INTEGER"/>
+                    <colHeader name="status" type="VARCHAR(2)"/>
+                    <colHeader name="attr1" type="VARCHAR(80)"/>
+                    <colHeader name="attr2" type="VARCHAR(80)"/>
+                    <colHeader name="attr3" type="VARCHAR(80)"/>
+                    <colHeader name="attr4" type="VARCHAR(80)"/>
+                    <colHeader name="attr5" type="VARCHAR(80)"/>
+                </rowHeader>
+                <row>
+                    <col type="java.lang.String" value="EST-4"/>
+                    <col type="java.lang.String" value="FI-FW-01"/>
+                    <col type="java.math.BigDecimal" value="18.50"/>
+                    <col type="java.math.BigDecimal" value="12.00"/>
+                    <col type="java.lang.Integer" value="1"/>
+                    <col type="java.lang.String" value="P"/>
+                    <col type="java.lang.String" value="Spotted"/>
+                    <col null="true"/>
+                    <col null="true"/>
+                    <col null="true"/>
+                    <col null="true"/>
+                </row>
+                <row>
+                    <col type="java.lang.String" value="EST-5"/>
+                    <col type="java.lang.String" value="FI-FW-01"/>
+                    <col type="java.math.BigDecimal" value="18.50"/>
+                    <col type="java.math.BigDecimal" value="12.00"/>
+                    <col type="java.lang.Integer" value="1"/>
+                    <col type="java.lang.String" value="P"/>
+                    <col type="java.lang.String" value="Spotless"/>
+                    <col null="true"/>
+                    <col null="true"/>
+                    <col null="true"/>
+                    <col null="true"/>
+                </row>
+            </table>
+            <table colCount="4"
+                creationSql="CREATE TABLE APP.PRODUCT (&quot;productid&quot; VARCHAR(10) NOT NULL, &quot;category&quot; VARCHAR(10) NOT NULL, &quot;name&quot; VARCHAR(80), &quot;descn&quot; VARCHAR(255), PRIMARY KEY (&quot;productid&quot;))"
+                name="PRODUCT" rowCount="4">
+                <rowHeader>
+                    <colHeader name="productid" type="VARCHAR(10)"/>
+                    <colHeader name="category" type="VARCHAR(10)"/>
+                    <colHeader name="name" type="VARCHAR(80)"/>
+                    <colHeader name="descn" type="VARCHAR(255)"/>
+                </rowHeader>
+                <row>
+                    <col type="java.lang.String" value="FI-FW-01"/>
+                    <col type="java.lang.String" value="FISH"/>
+                    <col type="java.lang.String" value="Koi"/>
+                    <col type="java.lang.String" value="&lt;image src=&quot;../images/fish3.gif&quot;>Fresh Water fish from Japan"/>
+                </row>
+                <row>
+                    <col type="java.lang.String" value="FI-FW-02"/>
+                    <col type="java.lang.String" value="FISH"/>
+                    <col type="java.lang.String" value="Goldfish"/>
+                    <col type="java.lang.String" value="&lt;image src=&quot;../images/fish2.gif&quot;>Fresh Water fish from China"/>
+                </row>
+                <row>
+                    <col type="java.lang.String" value="FI-SW-01"/>
+                    <col type="java.lang.String" value="FISH"/>
+                    <col type="java.lang.String" value="Angelfish"/>
+                    <col type="java.lang.String" value="&lt;image src=&quot;../images/fish1.jpg&quot;>Salt Water fish from Australia"/>
+                </row>
+                <row>
+                    <col type="java.lang.String" value="FI-SW-02"/>
+                    <col type="java.lang.String" value="FISH"/>
+                    <col type="java.lang.String" value="Tiger Shark"/>
+                    <col type="java.lang.String" value="&lt;image src=&quot;../images/fish4.gif&quot;>Salt Water fish from Australia"/>
+                </row>
+            </table>
+        </snapshot>
+        <pass_through autoLearn="false" dml="false" enabled="false"
+            procs="true" tables="true"/>
+    </resourceConfig>
+</editableResource>

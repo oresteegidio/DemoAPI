@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1719411458127" createdUser="orest"
+    id="-656a74fb:19054e8be85:-7f67" type="environment_resource"
+    updatedTimestamp="1725015266047" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
+        <evbindings>
+            <evbinding evLogicalItemId="-1c433097:1907800f463:-7e5d" evPhysicalItemId="-1c433097:1907800f463:-7e5c"/>
+            <evbinding
+                evLogicalItemId="-2143ab61:19054eb5d68:-7d64:-444870075:408339756" evPhysicalItemId="-2143ab61:19054eb5d68:-7d64:-444870075:1544155186"/>
+            <evbinding
+                evLogicalItemId="-2143ab61:19054eb5d68:-7e9b:1731931949:408339756" evPhysicalItemId="-2143ab61:19054eb5d68:-7e9b:-1600560688:1544155186"/>
+            <evbinding evLogicalItemId="-6e7d0601:190780497ce:-7e61" evPhysicalItemId="-6e7d0601:190780497ce:-7e60"/>
+            <evbinding
+                evLogicalItemId="-70421510:19077d5b603:-7e61:1731931949:408339756" evPhysicalItemId="-70421510:19077d5b603:-7e61:-420080752:1544155186"/>
+            <evbinding
+                evLogicalItemId="-8dd6577:19055b78875:-7e36:1984149904:408339756" evPhysicalItemId="-8dd6577:19055b78875:-7e36:-832893983:1544155186"/>
+            <evbinding evLogicalItemId="10bf4b64:19077eaf28e:-7e41" evPhysicalItemId="10bf4b64:19077eaf28e:-7e40"/>
+            <evbinding evLogicalItemId="59ec64d5:191a2a502dd:-7e51" evPhysicalItemId="59ec64d5:191a2a502dd:-7e1b"/>
+            <evbinding evLogicalItemId="5e6709d5:191a26b848a:-7b83" evPhysicalItemId="5e6709d5:191a26b848a:-7b82"/>
+            <evbinding
+                evLogicalItemId="5e6709d5:191a26b848a:-7ce5:1984149904:408339756" evPhysicalItemId="-2143ab61:19054eb5d68:-7d64:-444870075:1544155186"/>
+            <evbinding evLogicalItemId="6d1aeb2b:1907cd90a48:-7e57" evPhysicalItemId="6d1aeb2b:1907cd90a48:-7e2d"/>
+        </evbindings>
+    </resourceConfig>
+</editableResource>

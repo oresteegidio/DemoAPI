@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1720427475218" createdUser="orest"
+    id="-364ff6fc:19091777f57:-7e5f"
+    selfDescribing="A File located somewhere"
+    type="file_contents_transport" updatedTimestamp="1720427475218"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="File"/>
+</editableResource>

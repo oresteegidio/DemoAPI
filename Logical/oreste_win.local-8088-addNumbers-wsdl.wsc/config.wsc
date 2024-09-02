@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1719997572295" createdUser="orest"
+    id="-70421510:19077d5b603:-7e8b"
+    selfDescribing="oreste_win.local-8088-addNumbers-wsdl"
+    syncSourceDetails="-656a74fb:19054e8be85:-7f67"
+    type="wsdl_service_component" updatedTimestamp="1719997572326"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig>
+        <wsdl id="-70421510:19077d5b603:-7e86" name="oreste_win.local-8088-addNumbers-wsdl"/>
+    </resourceConfig>
+</editableResource>

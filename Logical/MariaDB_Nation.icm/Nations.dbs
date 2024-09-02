@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1721738064750" createdUser="orest"
+    id="-59195956:190dec1ce88:-7b7f" type="datbase_stub_resource"
+    updatedTimestamp="1721738064828" updatedUser="orest" version="1.1">
+    <loggingConfiguration debug="true" resultWriterLoggingLevel="FULL" writeStubEventsToDB="true"/>
+    <resourceConfig _version="1.1" persistent="false"
+        procCallMode="RETURN_FIRST_MATCH" procErrorMode="FAIL_ON_ERROR">
+        <snapshot>
+            <table colCount="1"
+                creationSql="CREATE TABLE APP.COM_IBM_STATEMENTS (STATEMENT CLOB)"
+                name="COM_IBM_STATEMENTS" rowCount="1">
+                <rowHeader>
+                    <colHeader name="STATEMENT" type="CLOB"/>
+                </rowHeader>
+                <row>
+                    <col length="20" type="java.sql.Clob"
+                        value="chunked" value0="SELECT * FROM guests"/>
+                </row>
+            </table>
+            <table colCount="2"
+                creationSql="CREATE TABLE APP.GUESTS (&quot;guest_id&quot; INTEGER NOT NULL, &quot;name&quot; VARCHAR(100) NOT NULL, PRIMARY KEY (&quot;guest_id&quot;))"
+                name="GUESTS" rowCount="5">
+                <rowHeader>
+                    <colHeader name="guest_id" type="INTEGER"/>
+                    <colHeader name="name" type="VARCHAR(100)"/>
+                </rowHeader>
+                <row>
+                    <col type="java.lang.Integer" value="1"/>
+                    <col type="java.lang.String" value="John"/>
+                </row>
+                <row>
+                    <col type="java.lang.Integer" value="2"/>
+                    <col type="java.lang.String" value="Jane"/>
+                </row>
+                <row>
+                    <col type="java.lang.Integer" value="3"/>
+                    <col type="java.lang.String" value="Jean"/>
+                </row>
+                <row>
+                    <col type="java.lang.Integer" value="4"/>
+                    <col type="java.lang.String" value="Storm"/>
+                </row>
+                <row>
+                    <col type="java.lang.Integer" value="5"/>
+                    <col type="java.lang.String" value="Oreste"/>
+                </row>
+            </table>
+        </snapshot>
+        <pass_through autoLearn="false" dml="false" enabled="false"
+            procs="true" tables="true"/>
+    </resourceConfig>
+</editableResource>

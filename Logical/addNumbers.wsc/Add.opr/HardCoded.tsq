@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1725006936183" createdUser="orest"
+    id="5e6709d5:191a26b848a:-7db6"
+    references="-70421510:19077d5b603:-7e61:1731931949:408339756"
+    type="test_resource" updatedTimestamp="1725007080971"
+    updatedUser="orest" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="5e6709d5:191a26b848a:-7d5d"
+                selfDescribing="Iterate over a test data set"
+                type="iterate_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" disableMappings="false"
+                    iterationContributor="true" maxIterationTime="0.0"
+                    maxIterationTimeExceededFailsTest="false"
+                    maxTotalIterationTime="0.0"
+                    maxTotalIterationTimeExceededFailsTest="false"
+                    name=" over DS_File" option="NOTHING"
+                    pacingtime="0.0" pacingtype="MIN_DURATION"
+                    performanceDisableValidation="false"
+                    performanceInstances="1"
+                    performanceInterleave="false"
+                    performanceMaximumIterationTime="0"
+                    performanceMaximumTestTime="0"
+                    performanceUseMaximumIterationTime="false"
+                    performanceUseMaximumTestTime="false" remoteAgent=""
+                    reportingLogIterations="1"
+                    reportingLogLogMessages="8" reportingLogMessages="4"
+                    reportingLogScriptExitCodes="8"
+                    reportingLogScriptOutput="8"
+                    reportingLogTagValues="8" reportingLogTimes="8"
+                    runSettingsContinueOnFail="true"
+                    runSettingsDelayEnabled="false"
+                    runSettingsDelayType="Fixed Delay"
+                    runSettingsIterations=""
+                    runSettingsMaximumDelayValue="0"
+                    runSettingsMinimumDelayValue="0"
+                    runSettingsRunFor="0" runSettingsRunType="Once Only"
+                    runSettingsTestDescription="" type="script:Chai"
+                    useMaxIterationTime="false"
+                    useMaxTotalIterationTime="false" usepacing="false">
+                    <testDataSetReference
+                        id="396171ef:191a25534f6:-7bc4" lkname="DS_File"
+                        lkpath="addNumbers/Add/DS_File" type="simple_test_data"/>
+                    <mapper disableFiltersWhenEmpty="false"
+                        knownColumns="arg1,arg0,replyId,return" noAutoMap="">
+                        <mapping columnName="arg0" tagName="arg0" type="4"/>
+                        <mapping columnName="arg1" tagName="arg1" type="4"/>
+                        <mapping columnName="return" tagName="ritorno" type="4"/>
+                    </mapper>
+                    <testTree>
+                        <editableResource
+                            id="5e6709d5:191a26b848a:-7db2"
+                            references="-70421510:19077d5b603:-7e61:1731931949:408339756"
+                            selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
+                            type="send_request_action" version="1.1">
+                            <loggingConfiguration debug="false"
+                                resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                            <resourceConfig description=""
+                                formatter="HTTP_Message"
+                                name="&quot;Text&quot; on resource &quot;/addNumbers&quot; using schema &quot;Text&quot; via &quot;AddNumbersPort&quot;" transport="-70421510:19077d5b603:-7e61:1731931949:408339756">
+                                <headerMessage assocdefid="Http Publish"
+                                    meTy="Message" name=""
+                                    sch="Http Publish" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String" name="Method"
+                                    sch="Http Publish" type="7"
+                                    value="POST" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="POST" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="String" name="URL"
+                                    sch="Http Publish" type="7"
+                                    value="/addNumbers" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="/addNumbers" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="Message"
+                                    name="httpDetails"
+                                    sch="Http Publish" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String" name="Version"
+                                    sch="Http Publish" type="7"
+                                    value="1.1" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="1.1" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="Message"
+                                    name="httpHeaders"
+                                    sch="Http Publish" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String"
+                                    name="SOAPAction"
+                                    sch="Http Publish"
+                                    type="7"
+                                    value="&quot;Add&quot;" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="&quot;Add&quot;" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="String"
+                                    name="Content-Type"
+                                    sch="Http Publish"
+                                    type="7"
+                                    value="text/xml; charset=utf-8" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="text/xml; charset=utf-8" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    <_c meTy="String"
+                                    name="Pragma"
+                                    sch="Http Publish"
+                                    type="7"
+                                    value="no-cache" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="no-cache" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    <_c meTy="Boolean"
+                                    name="followRedirects"
+                                    sch="Http Publish" type="8"
+                                    value="true" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="true" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                    </_c>
+                                    <_c meTy="String" name="MessageType"
+                                    sch="Http Publish" type="7"
+                                    value="http.text.message.type" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="http.text.message.type" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                </headerMessage>
+                                <bodyMessage assocdefid="Text"
+                                    name="Text" sch="Text" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c coreTypeInt="7"
+                                    coreTypeName="String"
+                                    name="text" nodeFormatter="XML"
+                                    sch="Text" type="12" version="1.2">
+                                    <fieldExpander
+                                    fieldExpanderID="XML_EXPANDER"
+                                    fieldSchema="XML" fieldSchemaRoot="xml.Element">
+                                    <property
+                                    name="XML.nullvalues" value="false"/>
+                                    <property
+                                    name="XML.normalise" value="true"/>
+                                    <property
+                                    name="XML.declaration" value="false"/>
+                                    <property
+                                    name="XML.encoding" value="UTF-8"/>
+                                    <property
+                                    name="Multi-line indented" value="Single line"/>
+                                    <property
+                                    name="XML.xmlFormat" value="Single line"/>
+                                    <property name="XML.cdata" value="false"/>
+                                    <property name="XML.space" value="false"/>
+                                    </fieldExpander>
+                                    <contentTree>&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;SOAP-ENV:Body&gt;&lt;ns:addition xmlns:ns="http://GH.endpoint/"&gt;&lt;arg0&gt;%%arg0%%&lt;/arg0&gt;&lt;arg1&gt;%%arg1%%&lt;/arg1&gt;&lt;/ns:addition&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false"
+                                    matching="PREFERENCE" type="101"/>
+                                    </fieldAction>
+                                    <fieldAction type="0">
+                                    <fieldAction type="100"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="5"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="5"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                    </defaultActions>
+                                    <updates>
+                                    <updateField path="/text/SOAP-ENV:Envelope">
+                                    <_c assocdefid="xml.Element"/>
+                                    </updateField>
+                                    </updates>
+                                    </contentTree>
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction type="4"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="7"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                </bodyMessage>
+                            </resourceConfig>
+                        </editableResource>
+                        <editableResource
+                            id="5e6709d5:191a26b848a:-7dac"
+                            references="-70421510:19077d5b603:-7e61:1731931949:408339756"
+                            selfDescribing="Receive and validate a response to the request you have sent."
+                            type="receive_reply_action" version="1.1">
+                            <loggingConfiguration debug="false"
+                                resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                            <resourceConfig description=""
+                                formatter="HTTP_Message"
+                                name="&quot;Text&quot; using schema &quot;Text&quot;"
+                                sendRequestID="5e6709d5:191a26b848a:-7db2" transport="-70421510:19077d5b603:-7e61:1731931949:408339756">
+                                <headerMessage
+                                    assocdefid="Http Receive Reply"
+                                    meTy="Message" name=""
+                                    sch="Http Receive Reply" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String" name="StatusCode"
+                                    sch="Http Receive Reply"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="200" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="200" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    <_c meTy="String"
+                                    name="ReasonPhrase"
+                                    sch="Http Receive Reply"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="OK" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="OK" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    <_c meTy="Message"
+                                    name="httpDetails"
+                                    sch="Http Receive Reply"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String" name="Version"
+                                    sch="Http Receive Reply"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="1.1" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="1.1" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    <_c meTy="Message"
+                                    name="httpHeaders"
+                                    sch="Http Receive Reply"
+                                    type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c meTy="String"
+                                    name="content-type"
+                                    sch="Http Receive Reply"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="text/xml;charset=utf-8" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction
+                                    enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="text/xml;charset=utf-8" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    </_c>
+                                    </_c>
+                                    <_c meTy="String" name="MessageType"
+                                    sch="Http Receive Reply"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="http.text.message.type" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <filterActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    exp="http.text.message.type" type="0"/>
+                                    </fieldAction>
+                                    </filterActionGroup>
+                                    </_c>
+                                    <_c meTy="Date-Time"
+                                    name="rcvdTimestamp"
+                                    sch="Http Receive Reply"
+                                    type="11" version="1.2"/>
+                                </headerMessage>
+                                <subconfig
+                                    MessageType="http.text.message.type"
+                                    _version="1.1"
+                                    formatter="HTTP_Message" transport="-70421510:19077d5b603:-7e61:1731931949:408339756"/>
+                                <bodyMessage assocdefid="Text"
+                                    name="Text" sch="Text" type="12" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    <_c coreTypeInt="7"
+                                    coreTypeName="String"
+                                    name="text" nodeFormatter="XML"
+                                    sch="Text" type="12" version="1.2">
+                                    <fieldExpander
+                                    fieldExpanderID="XML_EXPANDER"
+                                    fieldSchema="XML" fieldSchemaRoot="xml.Element">
+                                    <property
+                                    name="XML.nullvalues" value="false"/>
+                                    <property
+                                    name="XML.normalise" value="true"/>
+                                    <property
+                                    name="XML.declaration" value="false"/>
+                                    <property
+                                    name="XML.encoding" value="UTF-8"/>
+                                    <property
+                                    name="Multi-line indented" value="Multi-line indented"/>
+                                    <property
+                                    name="XML.xmlFormat" value="Multi-line indented"/>
+                                    <property name="XML.cdata" value="false"/>
+                                    <property name="XML.space" value="false"/>
+                                    </fieldExpander>
+                                    <contentTree>&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#xd;
+   &lt;SOAP-ENV:Body&gt;&#xd;
+      &lt;ns2:additionResponse xmlns:ns2="http://GH.endpoint/"&gt;&#xd;
+         &lt;return&gt;%%ritorno%%&lt;/return&gt;&#xd;
+      &lt;/ns2:additionResponse&gt;&#xd;
+   &lt;/SOAP-ENV:Body&gt;&#xd;
+&lt;/SOAP-ENV:Envelope&gt;<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false"
+                                    matching="PREFERENCE" type="101"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction type="5"/>
+                                    </fieldAction>
+                                    <fieldAction type="1">
+                                    <fieldAction
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                    </defaultActions>
+                                    <updates>
+                                    <updateField path="/text/SOAP-ENV:Envelope">
+                                    <_c assocdefid="xml.Element"/>
+                                    </updateField>
+                                    </updates>
+                                    </contentTree>
+                                    <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction type="7"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </_c>
+                                </bodyMessage>
+                            </resourceConfig>
+                        </editableResource>
+                    </testTree>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE">
+            <tag defaultValue="" description="" name="ritorno"/>
+            <tag defaultValue="" description="" name="arg1"/>
+            <tag defaultValue="88" description="" name="arg0"/>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

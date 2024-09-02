@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1720084158159" createdUser="orest"
+    id="-5271c258:1907cffaec9:-7e18"
+    references="6d1aeb2b:1907cd90a48:-7e57" type="test_resource"
+    updatedTimestamp="1720084475929" updatedUser="orest" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="-5271c258:1907cffaec9:-7e0e"
+                references="6d1aeb2b:1907cd90a48:-7e57"
+                selfDescribing="The SQL Query action is used for executing an SQL SELECT statement against the selected database connection. Query results may be validated or stored using the Assert and Store tabs; sample result sets may be configured by running the query using the Test button."
+                type="sql_query_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig assertCellResults="false"
+                    assertColumnResults="false"
+                    callableStatement="false" description=""
+                    interval="0"
+                    name="&quot;SELECT name FROM guests where guest_id=1&quot;"
+                    repeat="false"
+                    sqlStatement="SELECT name FROM guests where guest_id=1"
+                    timeOffset="3600000" timeout="0" validateTypes="false">
+                    <dbserverid id="6d1aeb2b:1907cd90a48:-7e57"
+                        lkname="MariaDB_Nation" lkpath="MariaDB_Nation" type="infrastructure_component_resource"/>
+                    <dataModel>
+                        <_c columnName="name" columnType="7">
+                            <columnData name="name" type="7" version="1.2"/>
+                            <_c meTy="String" type="7" value="John" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="1">
+                                    <fieldAction exp="John" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction
+                                    description="Store copy of field in tag 'newTag'"
+                                    tN="Guest" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                    </dataModel>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="-5271c258:1907cffaec9:-7c38"
+                selfDescribing="The log actions enables you to output messages to console and a logging file."
+                type="logging_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig append="true" description=""
+                    flush="true" loggingMessage="guest= %%Guest%%"
+                    name="guest= %%Guest%%" outputFile="" role="0"/>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="SELECT">
+            <tag defaultValue="" description="" name="Guest">
+                <tagProps>
+                    <prop key="interfaceOutput" value="true"/>
+                    <prop key="scopeExecution" value="true"/>
+                </tagProps>
+            </tag>
+        </tagDataStore>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

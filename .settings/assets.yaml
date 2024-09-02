@@ -1,0 +1,20 @@
+name: DemoAPI
+projectReferences: 
+resources: 
+  - name: Custom
+    resources: 
+      - name: Oreste_Win.ghe
+  - name: Logical
+    resources: 
+      - name: MariaDB_Nation.icm
+        resources: 
+          - name: Flavio.tsq
+            type: com.ibm.rational.test.rit.testType
+            dependencies: 
+              - path: /DemoAPI
+                type: tsqProject
+          - name: MariaDB_Nation_guest.tsq
+            type: com.ibm.rational.test.rit.testType
+            dependencies: 
+              - path: /DemoAPI
+                type: tsqProject

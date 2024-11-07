@@ -2,7 +2,7 @@
 <editableResource createdTimestamp="1725005903064" createdUser="orest"
     id="396171ef:191a25534f6:-7de1"
     references="-70421510:19077d5b603:-7e61:1731931949:408339756"
-    type="test_resource" updatedTimestamp="1725005903064"
+    type="test_resource" updatedTimestamp="1725365682405"
     updatedUser="orest" version="1.1">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
@@ -39,7 +39,8 @@
                     runSettingsMaximumDelayValue="0"
                     runSettingsMinimumDelayValue="0"
                     runSettingsRunFor="0" runSettingsRunType="Once Only"
-                    type="script:Chai" useMaxIterationTime="false"
+                    runSettingsTestDescription="" type="script:Chai"
+                    useMaxIterationTime="false"
                     useMaxTotalIterationTime="false" usepacing="false">
                     <testDataSetReference
                         id="396171ef:191a25534f6:-7de0"
@@ -441,6 +442,7 @@
                                 <subconfig
                                     MessageType="http.text.message.type"
                                     Method="POST" URL="" _version="1.1"
+                                    allowSubPath="false"
                                     consumerType="Participate"
                                     filterHeaders="true"
                                     filterMethod="true"
@@ -486,7 +488,7 @@
                                     <contentTree>&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#xd;
    &lt;SOAP-ENV:Body&gt;&#xd;
       &lt;ns2:additionResponse xmlns:ns2="http://GH.endpoint/"&gt;&#xd;
-         &lt;return&gt;%%return%%&lt;/return&gt;&#xd;
+         &lt;return&gt;8&lt;/return&gt;&#xd;
       &lt;/ns2:additionResponse&gt;&#xd;
    &lt;/SOAP-ENV:Body&gt;&#xd;
 &lt;/SOAP-ENV:Envelope&gt;<defaultActions>
@@ -528,6 +530,9 @@
                                     <updates>
                                     <updateField path="/text/SOAP-ENV:Envelope">
                                     <_c assocdefid="xml.Element"/>
+                                    </updateField>
+                                    <updateField path="/text/SOAP-ENV:Envelope/SOAP-ENV:Body/ns2:additionResponse/return/{}">
+                                    <_c value="8"/>
                                     </updateField>
                                     </updates>
                                     </contentTree>

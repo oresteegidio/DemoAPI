@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1679930839319"
+    createdUser="STUART.WALKER" id="-7b702ba4:18722968208:-73a3"
+    type="performance_test_resource" updatedTimestamp="1679930839319"
+    updatedUser="STUART.WALKER" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" interval="5" iterations="1"
+        loadProfileType="0" owner="" phaseDurationColumn=""
+        phaseDurationUnits="0" phaseRanges="" probeCoolDownTime="15"
+        probeCoolDownUnits="0" probeWarmUpTime="15" probeWarmUpUnits="0" stepduration="60">
+        <dependencies lockEnvironment="false"/>
+    </resourceConfig>
+</editableResource>

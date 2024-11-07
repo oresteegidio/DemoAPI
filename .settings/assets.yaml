@@ -1,11 +1,334 @@
 name: DemoAPI
 projectReferences: 
 resources: 
-  - name: Custom
-    resources: 
-      - name: Oreste_Win.ghe
   - name: Logical
     resources: 
+      - name: Actions.scm
+        resources: 
+          - name: Assert
+            resources: 
+              - name: Command-Ping.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: Command
+            resources: 
+              - name: Command-Ping.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: Group
+            resources: 
+              - name: Group.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: RunTest
+            resources: 
+              - name: Child1.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Choir - Child1.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Choir - Child2.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Choir - Child3.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Choir - Child4.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Choir - Child5.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Choir.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: CountDown.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Event.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Papa.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: Sleep
+            resources: 
+              - name: Floor.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Sleep.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+      - name: CustomFunctions.scm
+        resources: 
+          - name: '00 README'
+            resources: 
+              - name: README.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: COBOL
+            resources: 
+              - name: COBOL_Integer.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: COBOL_SignLeadingSeparate.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: COBOL_SignTrailingSeparate.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: COBOL_parseNumber.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: 'Date and Time'
+            resources: 
+              - name: FormatSDF.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: File
+            resources: 
+              - name: CleanFileSeparator.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: CreateTriggerFile.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: DirectoryExists.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: DirectoryList.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: FileExists.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: FileSize.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: SIngleSlash.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: WaitForFile.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: WriteTransactionFile.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: WriteWeatherFile.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: MQ
+            resources: 
+              - name: MsgID.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: Other
+            resources: 
+              - name: ReplaceTag.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: ValidateXSD.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Xpath - Count.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Xpath.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: String
+            resources: 
+              - name: Left.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Right.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: TrimLength.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: System
+            resources: 
+              - name: GetCentralProperty.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Info.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Log.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: PrintBinConsole.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: PrintConsole.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Sleep.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: 'Test Data'
+            resources: 
+              - name: 'Read Names Write File.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+      - name: ECMAScript.scm
+        resources: 
+          - name: '00 README'
+            resources: 
+              - name: README.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: '01 Tags'
+            resources: 
+              - name: 'First - Passing Tags.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Second - Passing Tags.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: '02 List tags'
+            resources: 
+              - name: 'Tags - List.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Tags - MassCopy.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: '03 Functions'
+            resources: 
+              - name: Floor.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: HexConversion.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: '04 Assertions'
+            resources: 
+              - name: Extraction.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: '99 VariableTypes'
+            resources: 
+              - name: Null.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 'Type Int.tsq'
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
       - name: MariaDB_Nation.icm
         resources: 
           - name: Flavio.tsq
@@ -18,3 +341,89 @@ resources:
             dependencies: 
               - path: /DemoAPI
                 type: tsqProject
+      - name: SANDBOX.scm
+        resources: 
+          - name: '00 README'
+            resources: 
+              - name: README.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: SANDBOX
+            resources: 
+              - name: AA.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Base64.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: asasd.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+      - name: addNumbers.wsc
+        resources: 
+          - name: Add.opr
+            resources: 
+              - name: 20240902_Test1.csv
+                type: com.ibm.rational.test.lt.datapool
+                dependencies: 
+                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/20240902_Test1.csv.metadata
+                    type: datasetMetadata
+              - name: 20240902_Test1.csv.metadata
+              - name: 20240902_Test1.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 20240905_API.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: DS_AddNumber.csv
+                type: com.ibm.rational.test.lt.datapool
+                dependencies: 
+                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/DS_AddNumber.csv.metadata
+                    type: datasetMetadata
+              - name: DS_AddNumber.csv.metadata
+              - name: DS_AddNumber.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: DS_OresteAdd.csv
+                type: com.ibm.rational.test.lt.datapool
+                dependencies: 
+                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/DS_OresteAdd.csv.metadata
+                    type: datasetMetadata
+              - name: DS_OresteAdd.csv.metadata
+              - name: HardCoded.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+  - name: Schemas
+    resources: 
+      - name: GetWeatherResult.xsd
+        type: com.ibm.rational.test.lt.xsd
+      - name: transaction_request.xsd
+        type: com.ibm.rational.test.lt.xsd
+      - name: transaction_request_bad.xsd
+        type: com.ibm.rational.test.lt.xsd
+  - name: 'Test Data'
+    resources: 
+      - name: Order.xsd
+        type: com.ibm.rational.test.lt.xsd
+      - name: ages.csv
+        type: com.ibm.rational.test.lt.datapool
+        dependencies: 
+          - path: '/DemoAPI/Test Data/ages.csv.metadata'
+            type: datasetMetadata
+      - name: ages.csv.metadata

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1725538441210" createdUser="orest"
-    id="-2fc3d02e:191c219f03e:-7de0"
-    references="-70421510:19077d5b603:-7e61:1731931949:408339756"
-    type="stub_resource" updatedTimestamp="1725538568326"
+<editableResource createdTimestamp="1731936151658" createdUser="orest"
+    id="503d22aa:1933f62d4e1:-79bc"
+    references="503d22aa:1933f62d4e1:-7d6a:1731931949:408339756"
+    type="stub_resource" updatedTimestamp="1731936346816"
     updatedUser="orest" version="1.1">
     <loggingConfiguration debug="true" resultWriterLoggingLevel="FULL" writeStubEventsToDB="true"/>
     <resourceConfig description="" name="">
         <testTree>
-            <editableResource id="-2fc3d02e:191c219f03e:-7dd6"
-                references="-70421510:19077d5b603:-7e61:1731931949:408339756"
+            <editableResource id="503d22aa:1933f62d4e1:-79b2"
+                references="503d22aa:1933f62d4e1:-7d6a:1731931949:408339756"
                 selfDescribing="Configure a subscriber to pick up a message that can be passed to the child Case Actions"
                 type="message_switch_action" version="1.0">
                 <loggingConfiguration debug="false"
                     resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
                 <resourceConfig description="" formatter="HTTP_Message"
                     name="on resource &quot;/addNumbers&quot; via &quot;AddNumbersPort&quot;"
-                    src="396171ef:191a25534f6:-7de3" transport="-70421510:19077d5b603:-7e61:1731931949:408339756">
+                    src="503d22aa:1933f62d4e1:-7ad8" transport="503d22aa:1933f62d4e1:-7d6a:1731931949:408339756">
                     <settings MessageType="http.text.message.type"
                         Method="POST" URL="/addNumbers" _version="1.1"
                         allowSubPath="false" consumerType="Participate"
@@ -29,13 +29,13 @@
                         </filterHeadersList>
                     </settings>
                     <passThrough behaviour="DELAY"
-                        componentId="396171ef:191a25534f6:-7de3"
+                        componentId="503d22aa:1933f62d4e1:-7ad8"
                         componentType="OPERATION" templateType="http_transport">
                         <DELAY delayPeriod="0"/>
                     </passThrough>
                     <cases>
                         <editableResource
-                            id="-2fc3d02e:191c219f03e:-7dd2"
+                            id="503d22aa:1933f62d4e1:-79ae"
                             selfDescribing="Configure the filtering and validation for this Case action"
                             type="message_case_action" version="1.0">
                             <loggingConfiguration debug="false"
@@ -296,14 +296,14 @@
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction
                                     enabled="false"
-                                    exp="14:13:34.600 2024/09/05" type="0"/>
+                                    exp="14:19:01.492 2024/11/18" type="0"/>
                                     </fieldAction>
                                     </filterActionGroup>
                                     </_c>
                                 </headerfilters>
                                 <childActions>
                                     <editableResource
-                                    id="-2fc3d02e:191c219f03e:-7dd1"
+                                    id="503d22aa:1933f62d4e1:-79ad"
                                     selfDescribing="Respond to a previously received request message.  Select the relevant request from the drop-down and edit the content of the message to send."
                                     type="send_reply_action" version="1.0">
                                     <loggingConfiguration
@@ -311,7 +311,7 @@
                                     resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
                                     <resourceConfig description=""
                                     formatter="HTTP_Message"
-                                    name="&quot;Text&quot; using schema &quot;Text&quot; (2)" receiverequestid="-2fc3d02e:191c219f03e:-7dd6">
+                                    name="&quot;Text&quot; using schema &quot;Text&quot; (2)" receiverequestid="503d22aa:1933f62d4e1:-79b2">
                                     <replyHeaderMessage
                                     assocdefid="Http Send Reply"
                                     meTy="Message" name=""
@@ -496,7 +496,7 @@
                                     <contentTree>&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#xd;
    &lt;SOAP-ENV:Body&gt;&#xd;
       &lt;ns2:additionResponse xmlns:ns2="http://GH.endpoint/"&gt;&#xd;
-         &lt;return&gt;10&lt;/return&gt;&#xd;
+         &lt;return&gt;100&lt;/return&gt;&#xd;
       &lt;/ns2:additionResponse&gt;&#xd;
    &lt;/SOAP-ENV:Body&gt;&#xd;
 &lt;/SOAP-ENV:Envelope&gt;<defaultActions>
@@ -593,7 +593,7 @@
                             </resourceConfig>
                         </editableResource>
                         <editableResource
-                            id="-2fc3d02e:191c219f03e:-7dd5"
+                            id="503d22aa:1933f62d4e1:-79b1"
                             type="default_case_action" version="1.0">
                             <loggingConfiguration debug="false"
                                 resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
@@ -603,7 +603,7 @@
                 </resourceConfig>
             </editableResource>
         </testTree>
-        <tagDataStore identifier="-2fc3d02e:191c219f03e:-7d0d"
+        <tagDataStore identifier="503d22aa:1933f62d4e1:-7925"
             inputMode="NONE" outputMode="NONE"/>
         <testprops messageClearance="false"/>
         <stubprops behaviourStyle="ONE_TO_ONE"
@@ -611,7 +611,7 @@
             messageClearance="false" minorVersion="0" optimise="false"
             sendErrorResponseOption="false" wrks="10">
             <responseTimeTable>
-                <entry key="396171ef:191a25534f6:-7de3">
+                <entry key="503d22aa:1933f62d4e1:-7ad8">
                     <value type="NO_DELAY"/>
                 </entry>
             </responseTimeTable>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1725005902954" createdUser="orest"
-    id="396171ef:191a25534f6:-7de0" type="simple_test_data"
-    updatedTimestamp="1725005902954" updatedUser="orest" version="1.0">
+<editableResource createdTimestamp="1731936079575" createdUser="orest"
+    id="503d22aa:1933f62d4e1:-7a2e" type="simple_test_data"
+    updatedTimestamp="1731936079575" updatedUser="orest" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig autoMapColumns="true" columnCount=""
         datasourceType="Delimited" enc="UTF-8" escapeQuotedString="true"
         hasColumnNamesLine="true" linesBeforeColumnNames="0"
-        location="%%PROJECT/ROOT_DIRECTORY%%/Logical/addNumbers.wsc/Add.opr/DS_AddNumber.csv"
+        location="%%PROJECT/ROOT_DIRECTORY%%/Logical/addNumbers.wsc/Add.opr/WithVariable.csv"
         loop="false" parsingType="OffsetLength" separator=","
         treatEmptyStringAsNull="false" treatTextAsEmpty="false"
         treatTextAsEmptyValue="" treatTextAsNull="true"

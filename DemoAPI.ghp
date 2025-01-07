@@ -81,12 +81,18 @@
         </dbConnectionParameters>
         <automationServer enabled="true" projectId="-1"
             projectName="--No Project Selected--" publishResults="false"
-            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!27c6"
+            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!9002"
             trustStorePath="" url=""/>
     </serverSettings>
     <permissionsSettings ADtrustSource="NONE"
-        ADtrustStorePassword="#com.ghc.1!3326" ADtrustStorePath=""
+        ADtrustStorePassword="#com.ghc.1!ae73" ADtrustStorePath=""
         autoLogin="true" host="ORESTE_WIN"
         permFactId="ldap.permissions.factory.none" port="389" pswd="DpJ3xyNc6pKMBA7r14OZAEjOIW6v5IVyz6VjgiJHviY=$hKRUZFblwQQrVzLgXC7bgyINeBGMGPF07yIX2k77itE="/>
     <resultPublishers disableAll="false"/>
+    <publishedResourceInfo>
+        <info domain="DemoEnv" serverUrl="https://localhost:5443/RTCP"
+            vMajor="1" vMinor="0">
+            <resource id="503d22aa:1933f62d4e1:-79bc"/>
+        </info>
+    </publishedResourceInfo>
 </_c>

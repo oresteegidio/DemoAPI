@@ -1,6 +1,9 @@
 name: DemoAPI
 projectReferences: 
 resources: 
+  - name: Custom
+    resources: 
+      - name: 'Commerce React Store PUBLIC.ghe'
   - name: Logical
     resources: 
       - name: Actions.scm
@@ -329,6 +332,122 @@ resources:
                 dependencies: 
                   - path: /DemoAPI
                     type: tsqProject
+      - name: EmeraldAPIs.scm
+        resources: 
+          - name: 'React Store.scm'
+            resources: 
+              - name: 'Add Item To Cart.opr'
+                resources: 
+                  - name: 'Add Item To Cart.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Check Online Inventory.opr'
+                resources: 
+                  - name: 'Check Online Inventory.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Check Order Info.opr'
+                resources: 
+                  - name: 'Check Order Info.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: Checkout.opr
+                resources: 
+                  - name: Checkout.tsq
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Convert to Guest Shopper.opr'
+                resources: 
+                  - name: 'Convert to Guest Shopper.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Create Billing Shipping Address Info.opr'
+                resources: 
+                  - name: 'Create Billing Shipping Address Info.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Delete Old Payment .opr'
+                resources: 
+                  - name: 'Delete Old Payment .tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Display Product in Cart.opr'
+                resources: 
+                  - name: 'Display Product in Cart.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'GET Top Categories.opr'
+                resources: 
+                  - name: 'GET Top Categories.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Get Cart Contents.opr'
+                resources: 
+                  - name: 'Get Cart Contents.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Navigate to a Category.opr'
+                resources: 
+                  - name: 'Navigate to a Category.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Navigate to a Product.opr'
+                resources: 
+                  - name: 'Navigate to a Product.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Prepare Cart for Checkout.opr'
+                resources: 
+                  - name: 'Prepare Cart for Checkout.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Set Payment Method & Amount.opr'
+                resources: 
+                  - name: 'Set Payment Method & Amount.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Set Shipping Address Info For Order.opr'
+                resources: 
+                  - name: 'Set Shipping Address Info For Order.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
+              - name: 'Show All Payment methods.opr'
+                resources: 
+                  - name: 'Show All Payment methods.tsq'
+                    type: com.ibm.rational.test.rit.testType
+                    dependencies: 
+                      - path: /DemoAPI
+                        type: tsqProject
       - name: MariaDB_Nation.icm
         resources: 
           - name: Flavio.tsq
@@ -371,56 +490,31 @@ resources:
         resources: 
           - name: Add.opr
             resources: 
-              - name: 20240902_Test1.csv
+              - name: Fromrecording.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: WithVariable.csv
                 type: com.ibm.rational.test.lt.datapool
                 dependencies: 
-                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/20240902_Test1.csv.metadata
+                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/WithVariable.csv.metadata
                     type: datasetMetadata
-              - name: 20240902_Test1.csv.metadata
-              - name: 20240902_Test1.tsq
+              - name: WithVariable.csv.metadata
+              - name: WithVariable.tsq
                 type: com.ibm.rational.test.rit.testType
                 dependencies: 
                   - path: /DemoAPI
                     type: tsqProject
-              - name: 20240905_API.tsq
+          - name: addition.opr
+            resources: 
+              - name: AddFromWsdl.tsq
                 type: com.ibm.rational.test.rit.testType
                 dependencies: 
                   - path: /DemoAPI
                     type: tsqProject
-              - name: DS_AddNumber.csv
-                type: com.ibm.rational.test.lt.datapool
-                dependencies: 
-                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/DS_AddNumber.csv.metadata
-                    type: datasetMetadata
-              - name: DS_AddNumber.csv.metadata
-              - name: DS_AddNumber.tsq
-                type: com.ibm.rational.test.rit.testType
-                dependencies: 
-                  - path: /DemoAPI
-                    type: tsqProject
-              - name: DS_OresteAdd.csv
-                type: com.ibm.rational.test.lt.datapool
-                dependencies: 
-                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/DS_OresteAdd.csv.metadata
-                    type: datasetMetadata
-              - name: DS_OresteAdd.csv.metadata
-              - name: HardCoded.tsq
-                type: com.ibm.rational.test.rit.testType
-                dependencies: 
-                  - path: /DemoAPI
-                    type: tsqProject
-  - name: Schemas
-    resources: 
-      - name: GetWeatherResult.xsd
-        type: com.ibm.rational.test.lt.xsd
-      - name: transaction_request.xsd
-        type: com.ibm.rational.test.lt.xsd
-      - name: transaction_request_bad.xsd
-        type: com.ibm.rational.test.lt.xsd
   - name: 'Test Data'
     resources: 
-      - name: Order.xsd
-        type: com.ibm.rational.test.lt.xsd
       - name: ages.csv
         type: com.ibm.rational.test.lt.datapool
         dependencies: 

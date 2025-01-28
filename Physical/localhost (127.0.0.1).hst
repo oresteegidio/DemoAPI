@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1719412322320" createdUser="orest"
-    id="-2143ab61:19054eb5d68:-7e52"
+<editableResource createdTimestamp="1737967129477" createdUser="orest"
+    id="-7358ecf7:194a6e7409d:-7d3f"
     selfDescribing="localhost (127.0.0.1)" type="host_machine_resource"
-    updatedTimestamp="1719412322320" updatedUser="orest" version="1.0">
+    updatedTimestamp="1737967129477" updatedUser="orest" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig host_address="127.0.0.1" user_host_name="localhost">
         <roles>

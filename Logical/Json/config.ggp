@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738052543714" createdUser="orest"
+    id="223b0adf:194abd2c4ca:-76e0" type="grouping_resource"
+    updatedTimestamp="1738052543714" updatedUser="orest" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+</editableResource>

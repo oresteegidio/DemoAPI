@@ -2,7 +2,7 @@
 <editableResource createdTimestamp="1617266275625"
     createdUser="STUART.WALKER" id="d67d2c9:1788c912586:-7899"
     references="d67d2c9:1788c912586:-7ec5:1390432723:408339756"
-    type="test_resource" updatedTimestamp="1736265830823"
+    type="test_resource" updatedTimestamp="1736406436745"
     updatedUser="orest" version="1.1">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig description="" name="">
@@ -127,8 +127,7 @@
                             </fieldAction>
                         </fieldActionGroup>
                         <_c meTy="String" name="StatusCode"
-                            sch="Http Receive Reply" type="7"
-                            value="200" version="1.2">
+                            sch="Http Receive Reply" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -137,7 +136,7 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="String" name="ReasonPhrase"
-                            sch="Http Receive Reply" type="7" value="OK" version="1.2">
+                            sch="Http Receive Reply" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -156,8 +155,7 @@
                                 </fieldAction>
                             </fieldActionGroup>
                             <_c meTy="String" name="Version"
-                                sch="Http Receive Reply" type="7"
-                                value="HTTP/1.1" version="1.2">
+                                sch="Http Receive Reply" type="7" version="1.2">
                                 <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -175,9 +173,8 @@
                                     ignoreNonPresent="false" type="100"/>
                                     </fieldAction>
                                 </fieldActionGroup>
-                                <_c meTy="String" name="Server"
-                                    sch="Http Receive Reply" type="7"
-                                    value="nginx" version="1.2">
+                                <_c meTy="String" name="server"
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -185,9 +182,8 @@
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
-                                <_c meTy="String" name="Date"
-                                    sch="Http Receive Reply" type="7"
-                                    value="Tue, 07 Jan 2025 15:52:06 GMT" version="1.2">
+                                <_c meTy="String" name="date"
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -195,9 +191,8 @@
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
-                                <_c meTy="String" name="Content-Type"
-                                    sch="Http Receive Reply" type="7"
-                                    value="application/json" version="1.2">
+                                <_c meTy="String" name="content-type"
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -206,9 +201,8 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String"
-                                    name="Transfer-Encoding"
-                                    sch="Http Receive Reply" type="7"
-                                    value="chunked" version="1.2">
+                                    name="transfer-encoding"
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -216,9 +210,8 @@
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
-                                <_c meTy="String" name="Connection"
-                                    sch="Http Receive Reply" type="7"
-                                    value="keep-alive" version="1.2">
+                                <_c meTy="String" name="connection"
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -227,8 +220,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="traceid"
-                                    sch="Http Receive Reply" type="7"
-                                    value="7457201936194378582" version="1.2">
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -238,8 +230,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="content-language"
-                                    sch="Http Receive Reply" type="7"
-                                    value="en-US" version="1.2">
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -248,8 +239,7 @@
                                     </fieldActionGroup>
                                 </_c>
                                 <_c meTy="String" name="vary"
-                                    sch="Http Receive Reply" type="7"
-                                    value="Accept-Encoding" version="1.2">
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -259,8 +249,7 @@
                                 </_c>
                                 <_c meTy="String"
                                     name="x-envoy-upstream-service-time"
-                                    sch="Http Receive Reply" type="7"
-                                    value="252" version="1.2">
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -268,9 +257,8 @@
                                     </fieldAction>
                                     </fieldActionGroup>
                                 </_c>
-                                <_c meTy="String" name="Cache-Control"
-                                    sch="Http Receive Reply" type="7"
-                                    value="no-store" version="1.2">
+                                <_c meTy="String" name="cache-control"
+                                    sch="Http Receive Reply" type="7" version="1.2">
                                     <fieldActionGroup>
                                     <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -281,8 +269,7 @@
                             </_c>
                         </_c>
                         <_c meTy="String" name="MessageType"
-                            sch="Http Receive Reply" type="7"
-                            value="http.text.message.type" version="1.2">
+                            sch="Http Receive Reply" type="7" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -291,8 +278,7 @@
                             </fieldActionGroup>
                         </_c>
                         <_c meTy="Date-Time" name="rcvdTimestamp"
-                            sch="Http Receive Reply" type="11"
-                            value="16:52:07.050 2025/01/07" version="1.2">
+                            sch="Http Receive Reply" type="11" version="1.2">
                             <fieldActionGroup>
                                 <fieldAction enabled="false" type="1">
                                     <fieldAction enabled="false"
@@ -718,13 +704,6 @@
                                     <updateField path="/text/Object/contents/1/thumbnail">
                                     <_c value="/hclstore/EmeraldCAS/images/catalog/bathroom/category/dep_bathroom.jpg"/>
                                     </updateField>
-                                    <setAction index="1" path="/text/Object/contents/1/name">
-                                    <fieldAction
-                                    description="Store copy of field in tag 'Category'"
-                                    tN="Category" type="2">
-                                    <dataAction type="Copy"/>
-                                    </fieldAction>
-                                    </setAction>
                                     <updateField path="/text/Object/contents/1/name">
                                     <_c value="Bath"/>
                                     </updateField>
@@ -1118,6 +1097,13 @@
                                     <updateField path="/text/Object/contents/3/thumbnail">
                                     <_c value="/hclstore/EmeraldCAS/images/catalog/diningroom/category/dep_diningroom.jpg"/>
                                     </updateField>
+                                    <setAction index="1" path="/text/Object/contents/3/name">
+                                    <fieldAction
+                                    description="Store copy of field in tag 'Category'"
+                                    tN="Category" type="2">
+                                    <dataAction type="Copy"/>
+                                    </fieldAction>
+                                    </setAction>
                                     <updateField path="/text/Object/contents/3/name">
                                     <_c value="Dining Room"/>
                                     </updateField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1736411044479" createdUser="orest"
+    id="-9dbac1a:19449e1c84c:-73d7" selfDescribing="api"
+    syncSourceDetails="d67d2c9:1788c912586:-7de1"
+    type="swagger_definition" updatedTimestamp="1736411044511"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig locationtype="102">
+        <locationURI>https://oreste.local:5443/RTCP/examples/phonebook/api/swagger.json</locationURI>
+    </resourceConfig>
+</editableResource>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rule_cache version="1.0">
+    <qpath>
+        <match path="Array/no-name()">
+            <rule>
+                <fieldActionGroup>
+                    <fieldAction fixed_value="" type="0">
+                        <fieldAction type="200"/>
+                    </fieldAction>
+                </fieldActionGroup>
+                <contexts>
+                    <context>SCHEMA_DATA_MASK</context>
+                </contexts>
+            </rule>
+        </match>
+    </qpath>
+</rule_cache>

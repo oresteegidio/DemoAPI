@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1736411026069" createdUser="orest"
+    id="-9dbac1a:19449e1c84c:-74a9:-1099308635:1544155186"
+    selfDescribing="RestAPI - https oreste.local:5443"
+    type="http_transport" updatedTimestamp="1737970610689"
+    updatedUser="orest" version="1.0">
+    <syncdetails compare="PHYSICALHTTPSoreste.local:5443"
+        lastSynced="1736411026069" sourceid="-9dbac1a:19449e1c84c:-74a9">
+        <sourcepath path="HTTPS"/>
+        <sourcepath path="oreste.local:5443"/>
+    </syncdetails>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="RestAPI" transportTemplateName="HTTP">
+        <messageProperties
+            ReasonPhrase="No Stub available that matches the request"
+            clientConnectionsPerHost="100" credDomain=""
+            credPassword="#com.ghc.1!7a39" credPreemptive="false"
+            credType="0" credUser="" httpHost="oreste.local"
+            httpNtlmDomain="" httpPort="5443" httpProxyHost=""
+            httpProxyPassword="#com.ghc.1!ba5f" httpProxyPort=""
+            httpProxyUsername="" httpResourceRoot=""
+            httpServerSocketBindAddressOverride=""
+            httpServerSocketPortOverride="" httpSocketTimeout=""
+            httpTimeoutResponseCode="503" httpVirtualHost=""
+            proxyType="http.proxy.default" recType="PROXY" useSsl="true" version="4">
+            <kerberos Anon="false" Conf="false" Custom="true"
+                Enabled="false" Integ="false" KDC="" Loc=""
+                MutAuth="false" Principal="" Pwd="#com.ghc.1!9c34"
+                Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
+            <oauth authURL="" clientassertion="" clientid=""
+                clientsecret="" enabled="false"
+                redirect_url="http://localhost:8080/callback"
+                refreshtoken="" scopes="" tokenendpoint=""/>
+            <serverAuthentication>
+                <authenticationConfig enabled="false" realm="" type="1"/>
+                <authenticationConfig algorithm="" authParams=""
+                    domain="" enabled="false" nonce="false" opaque=""
+                    qop="" realm="" stale="" type="2"/>
+                <authenticationConfig enabled="false" type="3"/>
+                <authenticationConfig enabled="false" type="5"/>
+            </serverAuthentication>
+        </messageProperties>
+    </resourceConfig>
+</editableResource>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1737968756152" createdUser="orest"
+    id="-57d5ea30:194a700a258:-7cb3" type="excel_test_data"
+    updatedTimestamp="1737969033215" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig autoMapColumns="true" hasColumnNamesLine="true"
+        linesBeforeColumnNames="0" linesToSkip="0"
+        location="%%PROJECT/ROOT_DIRECTORY%%/Test Data/ExcelDataSetAddition.xls"
+        loop="false" sheetName="" treatEmptyStringAsNull="false"
+        treatTextAsEmpty="false" treatTextAsEmptyValue=""
+        treatTextAsNull="false" treatTextAsNullValue=""/>
+</editableResource>

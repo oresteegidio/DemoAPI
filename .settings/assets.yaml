@@ -490,25 +490,20 @@ resources:
         resources: 
           - name: Add.opr
             resources: 
-              - name: Fromrecording.tsq
-                type: com.ibm.rational.test.rit.testType
-                dependencies: 
-                  - path: /DemoAPI
-                    type: tsqProject
-              - name: WithVariable.csv
+              - name: AddWithDS.csv
                 type: com.ibm.rational.test.lt.datapool
                 dependencies: 
-                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/WithVariable.csv.metadata
+                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/AddWithDS.csv.metadata
                     type: datasetMetadata
-              - name: WithVariable.csv.metadata
-              - name: WithVariable.tsq
+              - name: AddWithDS.csv.metadata
+              - name: AddWithDS.tsq
                 type: com.ibm.rational.test.rit.testType
                 dependencies: 
                   - path: /DemoAPI
                     type: tsqProject
           - name: addition.opr
             resources: 
-              - name: AddFromWsdl.tsq
+              - name: additionTest.tsq
                 type: com.ibm.rational.test.rit.testType
                 dependencies: 
                   - path: /DemoAPI

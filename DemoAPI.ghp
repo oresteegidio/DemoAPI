@@ -81,11 +81,11 @@
         </dbConnectionParameters>
         <automationServer enabled="true" projectId="-1"
             projectName="--No Project Selected--" publishResults="false"
-            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!9002"
+            trustSource="TRUST_ALL" trustStorePassword="#com.ghc.1!9e71"
             trustStorePath="" url=""/>
     </serverSettings>
     <permissionsSettings ADtrustSource="NONE"
-        ADtrustStorePassword="#com.ghc.1!ae73" ADtrustStorePath=""
+        ADtrustStorePassword="#com.ghc.1!7451" ADtrustStorePath=""
         autoLogin="true" host="ORESTE_WIN"
         permFactId="ldap.permissions.factory.none" port="389" pswd="DpJ3xyNc6pKMBA7r14OZAEjOIW6v5IVyz6VjgiJHviY=$hKRUZFblwQQrVzLgXC7bgyINeBGMGPF07yIX2k77itE="/>
     <resultPublishers disableAll="false"/>

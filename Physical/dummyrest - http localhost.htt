@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1725010670670" createdUser="orest"
-    id="59ec64d5:191a2a502dd:-7e50"
-    selfDescribing="dummyrest - http localhost" type="http_transport"
-    updatedTimestamp="1725010670670" updatedUser="orest" version="1.0">
-    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
-    <resourceConfig transportName="dummyrest" transportTemplateName="HTTP"/>
-</editableResource>

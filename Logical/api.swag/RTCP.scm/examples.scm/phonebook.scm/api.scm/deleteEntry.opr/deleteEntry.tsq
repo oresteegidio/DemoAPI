@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738052239374" createdUser="orest"
+    id="223b0adf:194abd2c4ca:-78ef"
+    references="-9dbac1a:19449e1c84c:-73d7:365739831:408339756,-9dbac1a:19449e1c84c:-73d7:-1028583081:-332410441"
+    type="test_resource" updatedTimestamp="1738052286668"
+    updatedUser="orest" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="223b0adf:194abd2c4ca:-78ed"
+                references="-9dbac1a:19449e1c84c:-73d7:365739831:408339756,-9dbac1a:19449e1c84c:-73d7:-1028583081:-332410441"
+                selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
+                type="send_request_action" version="1.1">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; on resource &quot;/RTCP/examples/phonebook/api/{id}&quot; using schema &quot;Text&quot; via &quot;HTTPS&quot;" transport="-9dbac1a:19449e1c84c:-73d7:365739831:408339756">
+                    <headerMessage meTy="Message" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="MessageType" type="7"
+                            value="http.text.message.type" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="http.text.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="Method" type="7"
+                            value="DELETE" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction exp="DELETE" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="URL" type="7"
+                            value="/RTCP/examples/phonebook/api/{id}" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="/RTCP/examples/phonebook/api/{id}" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version" type="7"
+                                value="" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Boolean" name="followRedirects"
+                                type="8" value="true" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="true" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                    </headerMessage>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c coreTypeInt="7" coreTypeName="String"
+                            name="text"
+                            nodeFormatter="rest_nodeformatter"
+                            sch="Text" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="rest_fieldexpander"
+                                fieldSchema="-9dbac1a:19449e1c84c:-73d7:-1028583081:-332410441" fieldSchemaRoot="deleteEntry"/>
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction type="4"/>
+                                </fieldAction>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c assocdefid="deleteEntry"
+                                name="deleteEntry"
+                                sch="-9dbac1a:19449e1c84c:-73d7:-1028583081:-332410441"
+                                type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c name="id"
+                                    sch="-9dbac1a:19449e1c84c:-73d7:-1028583081:-332410441"
+                                    type="7" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="3" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                            </_c>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="223b0adf:194abd2c4ca:-78e9"
+                references="-9dbac1a:19449e1c84c:-73d7:365739831:408339756"
+                selfDescribing="Receive and validate a response to the request you have sent."
+                type="receive_reply_action" version="1.1">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; using schema &quot;Text&quot;"
+                    sendRequestID="223b0adf:194abd2c4ca:-78ed" transport="-9dbac1a:19449e1c84c:-73d7:365739831:408339756">
+                    <headerMessage meTy="Message" name="" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="StatusCode" type="7"
+                            value="404" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="404" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="ReasonPhrase" type="7"
+                            value="Not Found" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Not Found" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version" type="7"
+                                value="HTTP/1.1" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="HTTP/1.1" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c meTy="String" name="Content-Type"
+                                    type="7" value="text/html" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="text/html" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="$WSEP" type="7"
+                                    value="" version="1.2"/>
+                                <_c meTy="String" name="Date" type="7"
+                                    value="Tue, 28 Jan 2025 08:17:39 GMT" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Tue, 28 Jan 2025 08:17:39 GMT" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Last-Modified"
+                                    type="7"
+                                    value="Tue, 03 Dec 2024 01:49:08 GMT" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Tue, 03 Dec 2024 01:49:08 GMT" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Content-Length"
+                                    type="7" value="1049" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="1049" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="Content-Language" type="7"
+                                    value="en-US" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="en-US" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String"
+                                    name="Strict-Transport-Security"
+                                    type="7" value="max-age=31536000" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="max-age=31536000" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Connection"
+                                    type="7" value="Close" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="Close" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                            </_c>
+                        </_c>
+                        <_c meTy="String" name="MessageType" type="7"
+                            value="http.text.message.type" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="http.text.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            type="11" value="09:17:39.058 2025/01/28" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="09:17:39.058 2025/01/28" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </headerMessage>
+                    <subconfig MessageType="http.text.message.type"
+                        URL="" _version="1.1" allowSubPath="false"
+                        consumerType="Participate" filterHeaders="false"
+                        filterMethod="false" filterResourcePath="false"
+                        formatter="HTTP_Message" transport="-9dbac1a:19449e1c84c:-73d7:365739831:408339756"/>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="text" sch="Text" type="7"
+                            value="&lt;!DOCTYPE html>&lt;html>&lt;head>&#xa;  &lt;meta charset=&quot;utf-8&quot;>&#xa;  &lt;title>Dashboards&lt;/title>&#xa;  &lt;base href=&quot;/RTCP/dashboards/&quot;>&#xa;  &#xa;  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;>&#xa;  &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;favicon.ico&quot;>&#xa;&lt;style>@font-face{font-family:Roboto;src:url(Roboto-Regular.fb80880011eeba42.ttf) format(&quot;truetype&quot;)}@font-face{font-family:Roboto;src:url(Roboto-Medium.d8dc431bbea2448e.ttf) format(&quot;truetype&quot;);font-weight:700}html{font-family:Roboto,Helvetica Neue,sans-serif}body{margin:0;overflow:hidden;overflow-x:auto;min-width:960px}&lt;/style>&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.74e1b3af2822bd5a.css&quot; media=&quot;print&quot; onload=&quot;this.media='all'&quot;>&lt;noscript>&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.74e1b3af2822bd5a.css&quot;>&lt;/noscript>&lt;/head>&#xa;&#xa;&lt;body>&#xa;  &lt;hcl-root>&lt;div style=&quot;padding: 20px;&quot;>Loading...&lt;/div>&lt;/hcl-root>&#xa;&lt;script src=&quot;runtime.8869b7ddf7577b68.js&quot; type=&quot;module&quot;>&lt;/script>&lt;script src=&quot;polyfills.b1cd05fa23502595.js&quot; type=&quot;module&quot;>&lt;/script>&lt;script src=&quot;main.143a0a21cfff1eac.js&quot; type=&quot;module&quot;>&lt;/script>&#xa;&#xa;&lt;/body>&lt;/html>" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction
+                                    exp="&lt;!DOCTYPE html>&lt;html>&lt;head>&#xa;  &lt;meta charset=&quot;utf-8&quot;>&#xa;  &lt;title>Dashboards&lt;/title>&#xa;  &lt;base href=&quot;/RTCP/dashboards/&quot;>&#xa;  &#xa;  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;>&#xa;  &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;favicon.ico&quot;>&#xa;&lt;style>@font-face{font-family:Roboto;src:url(Roboto-Regular.fb80880011eeba42.ttf) format(&quot;truetype&quot;)}@font-face{font-family:Roboto;src:url(Roboto-Medium.d8dc431bbea2448e.ttf) format(&quot;truetype&quot;);font-weight:700}html{font-family:Roboto,Helvetica Neue,sans-serif}body{margin:0;overflow:hidden;overflow-x:auto;min-width:960px}&lt;/style>&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.74e1b3af2822bd5a.css&quot; media=&quot;print&quot; onload=&quot;this.media='all'&quot;>&lt;noscript>&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.74e1b3af2822bd5a.css&quot;>&lt;/noscript>&lt;/head>&#xa;&#xa;&lt;body>&#xa;  &lt;hcl-root>&lt;div style=&quot;padding: 20px;&quot;>Loading...&lt;/div>&lt;/hcl-root>&#xa;&lt;script src=&quot;runtime.8869b7ddf7577b68.js&quot; type=&quot;module&quot;>&lt;/script>&lt;script src=&quot;polyfills.b1cd05fa23502595.js&quot; type=&quot;module&quot;>&lt;/script>&lt;script src=&quot;main.143a0a21cfff1eac.js&quot; type=&quot;module&quot;>&lt;/script>&#xa;&#xa;&lt;/body>&lt;/html>" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

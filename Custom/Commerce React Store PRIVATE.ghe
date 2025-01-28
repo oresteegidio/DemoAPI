@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <editableResource createdTimestamp="1617266644483"
     createdUser="STUART.WALKER" id="d67d2c9:1788c912586:-69c7"
-    type="environment_resource" updatedTimestamp="1730967516832"
+    type="environment_resource" updatedTimestamp="1737968659493"
     updatedUser="orest" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig isOverridingSecretsNamespace="false" overridingSecretsNamespace="">
         <environmentVariable evdescription="" key="addressId" value="9652022076"/>
-        <environmentVariable evdescription="" key="baseUrl_HOST" value="LP1-EU-51627856"/>
+        <environmentVariable evdescription="" key="baseUrl_HOST" value="localhost"/>
         <environmentVariable evdescription="" key="baseUrl_PATH" value="/RTCP/examples/phonebook/api"/>
-        <environmentVariable evdescription="" key="baseUrl_PORT" value="7443"/>
+        <environmentVariable evdescription="" key="baseUrl_PORT" value="5443"/>
         <environmentVariable evdescription="" key="bda-hostname" value="comdemoauthquery-app"/>
         <environmentVariable evdescription="" key="catalogId" value="11501"/>
         <environmentVariable evdescription="" key="categoryId" value="10502"/>
@@ -22,17 +22,23 @@
         <environmentVariable evdescription="" key="WCToken" value="47002%2CKZJdlbaa%2BZfBvcPAjx5iAYBMMO2ztGRjwfDG6g0iKUe%2BCTzPKO7LGybWB7kp%2F2VoFXCntrQMBsOyGO183p9ec01SYMwgqwjQBiJWrwHlDXijdv3XmpEWORzZz1N..."/>
         <environmentVariable evdescription="" key="WCTrustedToken" value="47002%2CjkVOR2vBhFuFWo4cgdfdjmiugZo%2FAHUuWdyLkZiRs4A%3D"/>
         <evbindings>
+            <evbinding
+                evLogicalItemId="-57d5ea30:194a700a258:-7dd7:1731931949:408339756" evPhysicalItemId="-57d5ea30:194a700a258:-7dd7:-1600560688:1544155186"/>
+            <evbinding
+                evLogicalItemId="-7358ecf7:194a6e7409d:-751a:1731931949:408339756" evPhysicalItemId="-7358ecf7:194a6e7409d:-751a:-1600560688:1544155186"/>
+            <evbinding
+                evLogicalItemId="-7358ecf7:194a6e7409d:-77da:1731931949:408339756" evPhysicalItemId="-7358ecf7:194a6e7409d:-77da:-1600560688:1544155186"/>
+            <evbinding
+                evLogicalItemId="-7358ecf7:194a6e7409d:-7d98:1731931949:408339756" evPhysicalItemId="-7358ecf7:194a6e7409d:-7d98:-1600560688:1544155186"/>
+            <evbinding
+                evLogicalItemId="-9dbac1a:19449e1c84c:-7209:1731931949:408339756" evPhysicalItemId="-9dbac1a:19449e1c84c:-7209:-1600560688:1544155186"/>
+            <evbinding
+                evLogicalItemId="-9dbac1a:19449e1c84c:-74a9:365739831:408339756" evPhysicalItemId="-9dbac1a:19449e1c84c:-74a9:-1099308635:1544155186"/>
+            <evbinding
+                evLogicalItemId="1092126b:19449b8a7ed:-7527:1731931949:408339756" evPhysicalItemId="1092126b:19449b8a7ed:-7527:-1600560688:1544155186"/>
             <evbinding evLogicalItemId="6b10b499:1788e004ea0:-7a7b" evPhysicalItemId="6b10b499:1788e004ea0:-7a04"/>
             <evbinding
-                evLogicalItemId="d67d2c9:1788c912586:-7ec5:-1947498549:408339756" evPhysicalItemId="d67d2c9:1788c912586:-7ec5:299184667:1544155186"/>
-            <evbinding
-                evLogicalItemId="d67d2c9:1788c912586:-7ec5:-34295267:408339756" evPhysicalItemId="d67d2c9:1788c912586:-7ec5:1279945414:1544155186"/>
-            <evbinding
-                evLogicalItemId="d67d2c9:1788c912586:-7ec5:126916355:408339756" evPhysicalItemId="d67d2c9:1788c912586:-7ec5:-335850832:1544155186"/>
-            <evbinding
                 evLogicalItemId="d67d2c9:1788c912586:-7ec5:1390432723:408339756" evPhysicalItemId="d67d2c9:1788c912586:-7ec5:1374399086:1544155186"/>
-            <evbinding
-                evLogicalItemId="d67d2c9:1788c912586:-7ec5:1914571800:408339756" evPhysicalItemId="d67d2c9:1788c912586:-7ec5:809970868:1544155186"/>
         </evbindings>
     </resourceConfig>
 </editableResource>

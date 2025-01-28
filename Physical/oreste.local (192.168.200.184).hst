@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1731935287599" createdUser="orest"
-    id="503d22aa:1933f62d4e1:-7d79"
+<editableResource createdTimestamp="1736411026606" createdUser="orest"
+    id="-9dbac1a:19449e1c84c:-73e9"
     selfDescribing="oreste.local (192.168.200.184)"
-    type="host_machine_resource" updatedTimestamp="1731935287599"
+    type="host_machine_resource" updatedTimestamp="1736411026606"
     updatedUser="orest" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig host_address="192.168.200.184" user_host_name="oreste.local">

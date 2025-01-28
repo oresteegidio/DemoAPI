@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1719412319753" createdUser="orest"
-    id="-2143ab61:19054eb5d68:-7e96" selfDescribing="addNumbers"
-    type="wsdl_schema" updatedTimestamp="1719412319753"
+<editableResource createdTimestamp="1737968657307" createdUser="orest"
+    id="-57d5ea30:194a700a258:-7dd2" selfDescribing="addNumbers"
+    type="wsdl_schema" updatedTimestamp="1737968657307"
     updatedUser="orest" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig schemaSourceTemplateName="WSDL">

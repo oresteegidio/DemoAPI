@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738003478492" createdUser="orest"
+    id="-3e8f5d12:194a800a3f1:-72fc"
+    selfDescribing="A File located somewhere"
+    type="file_contents_transport" updatedTimestamp="1738003585569"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="" transportTemplateName="File">
+        <_c directory="C:/Temp/" encoding="UTF-8" fileNamePattern=""
+            ignoreLastModification="false" lastModificationDelay="0"
+            newLineChoice="Native" packetiserType="AllAvailableBytes" writeEnabled="false"/>
+    </resourceConfig>
+</editableResource>

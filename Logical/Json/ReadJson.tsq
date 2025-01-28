@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738052555121" createdUser="orest"
+    id="223b0adf:194abd2c4ca:-76db"
+    references="-3e8f5d12:194a800a3f1:-72fc" type="test_resource"
+    updatedTimestamp="1738053049390" updatedUser="orest" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="223b0adf:194abd2c4ca:-7690"
+                references="-3e8f5d12:194a800a3f1:-72fc"
+                selfDescribing="Choose a transport and formatter on which to receive and validate a message."
+                type="subscribe_action" version="1.0">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="GH Text"
+                    name="&quot;Text&quot; to file &quot;C:/Temp/phonebook.json&quot; using schema &quot;Text&quot; via &quot;MyJson&quot;" transport="-3e8f5d12:194a800a3f1:-72fc">
+                    <headerMessage assocdefid="File Subscribe"
+                        meTy="Message" name="" sch="File Subscribe"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="File Subscribe" type="11"
+                            value="09:24:11.677 2025/01/28" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="09:24:11.677 2025/01/28" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="directory"
+                            sch="File Subscribe" type="7"
+                            value="C:\Temp" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="C:\Temp" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="fileName"
+                            sch="File Subscribe" type="7"
+                            value="phonebook.json" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="phonebook.json" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="fullPath"
+                            sch="File Subscribe" type="7"
+                            value="C:\Temp\phonebook.json" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="C:\Temp\phonebook.json" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Date-Time" name="lastModified"
+                            sch="File Subscribe" type="11"
+                            value="19:28:31.979 2025/01/27" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="19:28:31.979 2025/01/27" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Long" name="fileSize"
+                            sch="File Subscribe" type="3" value="415" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false"
+                                    exp="415" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </headerMessage>
+                    <subconfig _version="1.1"
+                        deleteAfterProcessing="false"
+                        fileName="C:/Temp/phonebook.json"
+                        formatter="GH Text" ignoreExisting="false"
+                        retryInterval="10000" transport="-3e8f5d12:194a800a3f1:-72fc"/>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="text" sch="Text" type="7"
+                            value="{&#xd;&#xa;&#xd;&#xa;    {&#xd;&#xa;      &quot;id&quot;: 4,&#xd;&#xa;&#x9;  &quot;title&quot;: &quot;Mr.&quot;,&#xd;&#xa;&#x9;  &quot;firstName&quot;: &quot;Carlo&quot;,&#xd;&#xa;&#x9;  &quot;lastName&quot;: &quot;Rossi&quot;,&#xd;&#xa;      &quot;phoneNumber&quot;: &quot;01962 00001&quot;&#xd;&#xa;},&#xd;&#xa;&#xd;&#xa;    {&#xd;&#xa;      &quot;id&quot;: 5,&#xd;&#xa;&#x9;  &quot;title&quot;: &quot;Mr.&quot;,&#xd;&#xa;&#x9;  &quot;firstName&quot;: &quot;Sergio&quot;,&#xd;&#xa;&#x9;  &quot;lastName&quot;: &quot;Verdi&quot;,&#xd;&#xa;      &quot;phoneNumber&quot;: &quot;01962 00002&quot;&#xd;&#xa;},&#xd;&#xa;&#xd;&#xa;    {&#xd;&#xa;      &quot;id&quot;: 7,&#xd;&#xa;&#x9;  &quot;title&quot;: &quot;Mr.&quot;,&#xd;&#xa;&#x9;  &quot;firstName&quot;: &quot;Mario&quot;,&#xd;&#xa;&#x9;  &quot;lastName&quot;: Bianchi&quot;,&#xd;&#xa;      &quot;phoneNumber&quot;: &quot;01962 00003&quot;&#xd;&#xa;&#xd;&#xa;}&#xd;&#xa;}" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="1">
+                                    <fieldAction
+                                    exp="{&#xd;&#xa;&#xd;&#xa;    {&#xd;&#xa;      &quot;id&quot;: 4,&#xd;&#xa;&#x9;  &quot;title&quot;: &quot;Mr.&quot;,&#xd;&#xa;&#x9;  &quot;firstName&quot;: &quot;Carlo&quot;,&#xd;&#xa;&#x9;  &quot;lastName&quot;: &quot;Rossi&quot;,&#xd;&#xa;      &quot;phoneNumber&quot;: &quot;01962 00001&quot;&#xd;&#xa;},&#xd;&#xa;&#xd;&#xa;    {&#xd;&#xa;      &quot;id&quot;: 5,&#xd;&#xa;&#x9;  &quot;title&quot;: &quot;Mr.&quot;,&#xd;&#xa;&#x9;  &quot;firstName&quot;: &quot;Sergio&quot;,&#xd;&#xa;&#x9;  &quot;lastName&quot;: &quot;Verdi&quot;,&#xd;&#xa;      &quot;phoneNumber&quot;: &quot;01962 00002&quot;&#xd;&#xa;},&#xd;&#xa;&#xd;&#xa;    {&#xd;&#xa;      &quot;id&quot;: 7,&#xd;&#xa;&#x9;  &quot;title&quot;: &quot;Mr.&quot;,&#xd;&#xa;&#x9;  &quot;firstName&quot;: &quot;Mario&quot;,&#xd;&#xa;&#x9;  &quot;lastName&quot;: Bianchi&quot;,&#xd;&#xa;      &quot;phoneNumber&quot;: &quot;01962 00003&quot;&#xd;&#xa;&#xd;&#xa;}&#xd;&#xa;}" type="14"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+        <testprops messageClearance="false"/>
+    </resourceConfig>
+</editableResource>

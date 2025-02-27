@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738654688475" createdUser="orest"
+    id="1fc6efbe:194cfe50f37:-7dc5"
+    selfDescribing="skills-be.innovaway.it (104.26.13.7)"
+    type="host_machine_resource" updatedTimestamp="1738654688475"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="104.26.13.7" user_host_name="skills-be.innovaway.it">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

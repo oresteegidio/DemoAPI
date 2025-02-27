@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738576743102" createdUser="orest"
+    id="-161848f6:194cab92cde:-765f"
+    selfDescribing="Restful-API - http localhost" type="http_transport"
+    updatedTimestamp="1738576743102" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="Restful-API" transportTemplateName="HTTP"/>
+</editableResource>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1737967129183" createdUser="orest"
-    id="-7358ecf7:194a6e7409d:-7d98:-1600560688:1544155186"
-    selfDescribing="http localhost:8088" type="http_transport"
-    updatedTimestamp="1737967129183" updatedUser="orest" version="1.0">
-    <syncdetails compare="http localhost:8088"
-        lastSynced="1737967129183" sourceid="-7358ecf7:194a6e7409d:-7d98">
-        <sourcepath path="AddNumbersService/AddNumbersPort"/>
+<editableResource createdTimestamp="1738596487901" createdUser="orest"
+    id="-9dbac1a:19449e1c84c:-73d7:-1099308635:1544155186"
+    selfDescribing="https oreste.local:5443" type="http_transport"
+    updatedTimestamp="1738596487901" updatedUser="orest" version="1.0">
+    <syncdetails compare="PHYSICALHTTPSoreste.local:5443"
+        lastSynced="1738596487901" sourceid="-9dbac1a:19449e1c84c:-73d7">
+        <sourcepath path="HTTPS"/>
+        <sourcepath path="oreste.local:5443"/>
     </syncdetails>
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig transportName="" transportTemplateName="HTTP">
@@ -13,13 +14,13 @@
             ReasonPhrase="No Stub available that matches the request"
             clientConnectionsPerHost="100" credDomain="" credPassword=""
             credPreemptive="false" credType="0" credUser=""
-            httpHost="localhost" httpNtlmDomain="" httpPort="8088"
+            httpHost="oreste.local" httpNtlmDomain="" httpPort="5443"
             httpProxyHost="" httpProxyPassword="" httpProxyPort=""
             httpProxyUsername="" httpResourceRoot=""
             httpServerSocketBindAddressOverride=""
             httpServerSocketPortOverride="" httpSocketTimeout=""
             httpTimeoutResponseCode="503" httpVirtualHost=""
-            proxyType="http.proxy.default" useSsl="false" version="4">
+            proxyType="http.proxy.default" useSsl="true" version="4">
             <kerberos Anon="false" CStyle="Username / Password"
                 Conf="false" Custom="true" Enabled="false" Integ="false"
                 MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>

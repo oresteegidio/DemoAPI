@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738660699643" createdUser="orest"
+    id="1fc6efbe:194cfe50f37:-7512" type="operation_resource"
+    updatedTimestamp="1738660699643" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig avgTime="0" color="124,199,255"
+        dependencies="-9dbac1a:19449e1c84c:-73d7:365739831:408339756"
+        invokeDynamicFormatterID="http.text.message.type"
+        invokeEndDynamicFormatterID="http.text.message.type"
+        invokeEndFormatterID="HTTP_Message"
+        invokeEndTransportID="-9dbac1a:19449e1c84c:-73d7:365739831:408339756"
+        invokeFormatterID="HTTP_Message"
+        invokeTransportID="-9dbac1a:19449e1c84c:-73d7:365739831:408339756"
+        maxTime="0" mepEndSchemaID="JSON"
+        mepEndSchemaNodeFormatter="JSON.nodeformatter"
+        mepEndSchemaroot="Object" mepEndUsed="true"
+        mepStartSchemaID="-9dbac1a:19449e1c84c:-73d7:-1028583081:-332410441"
+        mepStartSchemaNodeFormatter="rest_nodeformatter"
+        mepStartSchemaroot="getEntry" mepType="IN_OUT" minTime="0"
+        stubDynamicFormatterID="http.text.message.type"
+        stubFormatterID="HTTP_Message" stubTransportID="-9dbac1a:19449e1c84c:-73d7:365739831:408339756">
+        <invokeHeaderNode meTy="Message" name="" type="12" version="1.2">
+            <fieldActionGroup>
+                <fieldAction enabled="false" type="1">
+                    <fieldAction anyOrder="false" enabled="false"
+                        ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="GET" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="URL" type="7"
+                value="/RTCP/examples/phonebook/api/1" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction
+                            exp="/RTCP/examples/phonebook/api/{id}" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false"
+                            ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                    </fieldAction>
+                </fieldActionGroup>
+                <_c meTy="String" name="Version" type="7" value="1.1" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction type="0">
+                            <fieldAction exp="1.1" type="0"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                </_c>
+                <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                            <fieldAction anyOrder="false"
+                                enabled="false" ignoreExtra="false"
+                                ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                    <_c meTy="String" name="Upgrade-Insecure-Requests"
+                        type="7" value="1" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="1" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Sec-Fetch-Dest" type="7"
+                        value="document" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="document" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Sec-Fetch-Mode" type="7"
+                        value="navigate" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="navigate" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Sec-Fetch-Site" type="7"
+                        value="none" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="none" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Sec-Fetch-User" type="7"
+                        value="?1" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="?1" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Priority" type="7"
+                        value="u=0, i" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="u=0, i" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                </_c>
+            </_c>
+            <_c meTy="String" name="MessageType" type="7"
+                value="http.text.message.type" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="http.text.message.type" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+        </invokeHeaderNode>
+        <stubHeaderConfig>
+            <_c MessageType="http.text.message.type" Method="GET"
+                URL="/RTCP/examples/phonebook/api/"
+                consumerType="Participate" filterHeaders="true"
+                filterMethod="true" filterResourcePath="true" requireSubPath="true">
+                <filterHeadersList>
+                    <header disabled="true"
+                        name="Upgrade-Insecure-Requests" type="7" value="1"/>
+                    <header disabled="true" name="Sec-Fetch-Dest"
+                        type="7" value="document"/>
+                    <header disabled="true" name="Sec-Fetch-Mode"
+                        type="7" value="navigate"/>
+                    <header disabled="true" name="Sec-Fetch-Site"
+                        type="7" value="none"/>
+                    <header disabled="true" name="Sec-Fetch-User"
+                        type="7" value="?1"/>
+                    <header disabled="true" name="Priority" type="7" value="u=0, i"/>
+                </filterHeadersList>
+            </_c>
+        </stubHeaderConfig>
+    </resourceConfig>
+</editableResource>

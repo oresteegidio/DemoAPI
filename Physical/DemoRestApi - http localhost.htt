@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738576693385" createdUser="orest"
+    id="-161848f6:194cab92cde:-76c5"
+    selfDescribing="DemoRestApi - http localhost" type="http_transport"
+    updatedTimestamp="1738576693385" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="DemoRestApi" transportTemplateName="HTTP"/>
+</editableResource>

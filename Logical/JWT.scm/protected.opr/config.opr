@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1739881220022" createdUser="orest"
+    id="-916d51:1951886a406:-6c6f" type="operation_resource"
+    updatedTimestamp="1739881220022" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig avgTime="0" color="124,199,255"
+        dependencies="30b49b57:194e0019cac:-79b7"
+        invokeDynamicFormatterID="http.text.message.type"
+        invokeEndDynamicFormatterID="http.text.message.type"
+        invokeEndFormatterID="HTTP_Message"
+        invokeEndTransportID="30b49b57:194e0019cac:-79b7"
+        invokeFormatterID="HTTP_Message"
+        invokeTransportID="30b49b57:194e0019cac:-79b7" maxTime="0"
+        mepEndSchemaID="JSON"
+        mepEndSchemaNodeFormatter="JSON.nodeformatter"
+        mepEndSchemaroot="Object" mepEndUsed="true" mepType="IN_OUT"
+        minTime="0" stubDynamicFormatterID="http.text.message.type"
+        stubFormatterID="HTTP_Message" stubTransportID="30b49b57:194e0019cac:-79b7">
+        <invokeHeaderNode meTy="Message" name="" type="12" version="1.2">
+            <fieldActionGroup>
+                <fieldAction enabled="false" type="1">
+                    <fieldAction anyOrder="false" enabled="false"
+                        ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="Method" type="7" value="GET" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="GET" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="URL" type="7" value="/protected" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="/protected" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false"
+                            ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                    </fieldAction>
+                </fieldActionGroup>
+                <_c meTy="String" name="Version" type="7" value="1.1" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction type="0">
+                            <fieldAction exp="1.1" type="0"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                </_c>
+                <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                            <fieldAction anyOrder="false"
+                                enabled="false" ignoreExtra="false"
+                                ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                    <_c meTy="String" name="Authorization" type="7"
+                        value="Bearer 12345678" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="Bearer 12345678" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                </_c>
+            </_c>
+            <_c meTy="String" name="MessageType" type="7"
+                value="http.text.message.type" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="http.text.message.type" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+        </invokeHeaderNode>
+        <stubHeaderConfig>
+            <_c MessageType="http.text.message.type" Method="GET"
+                URL="/protected" allowSubPath="false"
+                consumerType="Participate" filterHeaders="true"
+                filterMethod="true" filterResourcePath="true">
+                <filterHeadersList>
+                    <header disabled="true" name="Authorization"
+                        type="7" value="Bearer 12345678"/>
+                </filterHeadersList>
+            </_c>
+        </stubHeaderConfig>
+    </resourceConfig>
+</editableResource>

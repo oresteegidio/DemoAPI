@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1725010740386" createdUser="orest"
-    id="59ec64d5:191a2a502dd:-7e1b"
-    selfDescribing="DummRestSample - http dummy.restapiexample.com:443"
-    type="http_transport" updatedTimestamp="1725010740386"
+<editableResource createdTimestamp="1738925867735" createdUser="orest"
+    id="30b49b57:194e0019cac:-79b6"
+    selfDescribing="JWT_Host - http localhost:5000"
+    type="http_transport" updatedTimestamp="1738925924380"
     updatedUser="orest" version="1.0">
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
-    <resourceConfig transportName="DummRestSample" transportTemplateName="HTTP">
+    <resourceConfig transportName="JWT_Host" transportTemplateName="HTTP">
         <messageProperties
             ReasonPhrase="No Stub available that matches the request"
             clientConnectionsPerHost="100" credDomain=""
-            credPassword="#com.ghc.1!0b4b" credPreemptive="false"
-            credType="0" credUser="" httpHost="dummy.restapiexample.com"
-            httpNtlmDomain="" httpPort="443" httpProxyHost=""
-            httpProxyPassword="#com.ghc.1!5881" httpProxyPort=""
+            credPassword="#com.ghc.1!1556" credPreemptive="false"
+            credType="0" credUser="" httpHost="localhost"
+            httpNtlmDomain="" httpPort="5000" httpProxyHost=""
+            httpProxyPassword="#com.ghc.1!a399" httpProxyPort=""
             httpProxyUsername="" httpResourceRoot=""
             httpServerSocketBindAddressOverride=""
             httpServerSocketPortOverride="" httpSocketTimeout=""
@@ -21,7 +21,7 @@
             useSsl="false" version="4">
             <kerberos Anon="false" Conf="false" Custom="true"
                 Enabled="false" Integ="false" KDC="" Loc=""
-                MutAuth="false" Principal="" Pwd="#com.ghc.1!743d"
+                MutAuth="false" Principal="" Pwd="#com.ghc.1!fdea"
                 Realm="" RepDet="false" SSO="false" SeqCheck="false"/>
             <oauth authURL="" clientassertion="" clientid=""
                 clientsecret="" enabled="false"

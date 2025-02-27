@@ -448,62 +448,146 @@ resources:
                     dependencies: 
                       - path: /DemoAPI
                         type: tsqProject
-      - name: MariaDB_Nation.icm
+      - name: JWT.scm
         resources: 
-          - name: Flavio.tsq
+          - name: 'login POST.opr'
+            resources: 
+              - name: 19_Login.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 20_Login.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Pio_Login.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: protected.opr
+            resources: 
+              - name: 19_Protected.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: 20_Protected.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Pio_Protected.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: Protected.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: 'register POST.opr'
+            resources: 
+              - name: LoginUser.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+              - name: pio_Register.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+      - name: Json
+        resources: 
+          - name: ReadJson.tsq
             type: com.ibm.rational.test.rit.testType
             dependencies: 
               - path: /DemoAPI
                 type: tsqProject
+      - name: MariaDB_Nation.icm
+        resources: 
           - name: MariaDB_Nation_guest.tsq
             type: com.ibm.rational.test.rit.testType
             dependencies: 
               - path: /DemoAPI
                 type: tsqProject
-      - name: SANDBOX.scm
-        resources: 
-          - name: '00 README'
-            resources: 
-              - name: README.tsq
-                type: com.ibm.rational.test.rit.testType
-                dependencies: 
-                  - path: /DemoAPI
-                    type: tsqProject
-          - name: SANDBOX
-            resources: 
-              - name: AA.tsq
-                type: com.ibm.rational.test.rit.testType
-                dependencies: 
-                  - path: /DemoAPI
-                    type: tsqProject
-              - name: Base64.tsq
-                type: com.ibm.rational.test.rit.testType
-                dependencies: 
-                  - path: /DemoAPI
-                    type: tsqProject
-              - name: asasd.tsq
-                type: com.ibm.rational.test.rit.testType
-                dependencies: 
-                  - path: /DemoAPI
-                    type: tsqProject
       - name: addNumbers.wsc
         resources: 
-          - name: Add.opr
+          - name: addition.opr
             resources: 
-              - name: AddWithDS.csv
-                type: com.ibm.rational.test.lt.datapool
-                dependencies: 
-                  - path: /DemoAPI/Logical/addNumbers.wsc/Add.opr/AddWithDS.csv.metadata
-                    type: datasetMetadata
-              - name: AddWithDS.csv.metadata
-              - name: AddWithDS.tsq
+              - name: Test.tsq
                 type: com.ibm.rational.test.rit.testType
                 dependencies: 
                   - path: /DemoAPI
                     type: tsqProject
-          - name: addition.opr
+              - name: Test1.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+      - name: api.swag
+        resources: 
+          - name: 1.opr
             resources: 
-              - name: additionTest.tsq
+              - name: pio2.tsq
+                type: com.ibm.rational.test.rit.testType
+                dependencies: 
+                  - path: /DemoAPI
+                    type: tsqProject
+          - name: RTCP.scm
+            resources: 
+              - name: examples.scm
+                resources: 
+                  - name: phonebook.scm
+                    resources: 
+                      - name: api.scm
+                        resources: 
+                          - name: create.opr
+                            resources: 
+                              - name: addEntry.tsq
+                                type: com.ibm.rational.test.rit.testType
+                                dependencies: 
+                                  - path: /DemoAPI
+                                    type: tsqProject
+                          - name: deleteEntry.opr
+                            resources: 
+                              - name: deleteEntry.tsq
+                                type: com.ibm.rational.test.rit.testType
+                                dependencies: 
+                                  - path: /DemoAPI
+                                    type: tsqProject
+                          - name: getEntry.opr
+                            resources: 
+                              - name: GetEntry1.tsq
+                                type: com.ibm.rational.test.rit.testType
+                                dependencies: 
+                                  - path: /DemoAPI
+                                    type: tsqProject
+                              - name: getEntry.tsq
+                                type: com.ibm.rational.test.rit.testType
+                                dependencies: 
+                                  - path: /DemoAPI
+                                    type: tsqProject
+                          - name: queryPhonebook.opr
+                            resources: 
+                              - name: Query.tsq
+                                type: com.ibm.rational.test.rit.testType
+                                dependencies: 
+                                  - path: /DemoAPI
+                                    type: tsqProject
+          - name: api-1.opr
+            resources: 
+              - name: pio4.csv
+                type: com.ibm.rational.test.lt.datapool
+                dependencies: 
+                  - path: /DemoAPI/Logical/api.swag/api-1.opr/pio4.csv.metadata
+                    type: datasetMetadata
+              - name: pio4.csv.metadata
+              - name: pio4.tsq
                 type: com.ibm.rational.test.rit.testType
                 dependencies: 
                   - path: /DemoAPI

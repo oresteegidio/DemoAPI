@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1738654688506" createdUser="orest"
+    id="1fc6efbe:194cfe50f37:-7dc4"
+    selfDescribing="api.restful-api.dev (104.21.88.122)"
+    type="host_machine_resource" updatedTimestamp="1738654688506"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="104.21.88.122" user_host_name="api.restful-api.dev">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

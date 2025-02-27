@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1736411044856" createdUser="orest"
+<editableResource createdTimestamp="1738596487933" createdUser="orest"
     id="-9dbac1a:19449e1c84c:-73d7:-1028583081:-332410441"
     selfDescribing="phonebook" type="parameterized_url_schema"
-    updatedTimestamp="1736411044856" updatedUser="orest" version="1.0">
-    <syncdetails compare="1736411044730" lastSynced="1736411044856" sourceid="-9dbac1a:19449e1c84c:-73d7"/>
+    updatedTimestamp="1738661005627" updatedUser="orest" version="1.0">
+    <syncdetails compare="1738596487870" lastSynced="1738596487933" sourceid="-9dbac1a:19449e1c84c:-73d7"/>
     <documentation>
         <description value="https://oreste.local:5443/RTCP/examples/phonebook/api/swagger.json&#xa;&#xa;"/>
     </documentation>
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig schemaSourceTemplateName="URL">
-        <schemaSourceConfig name="phonebook">
+        <schemaSourceConfig basePath="" name="phonebook">
+            <url templateName="create">
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="RTCP"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="examples"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="phonebook"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="/"
+                    parameterName="" type="7"/>
+                <path isExpandable="false" isParameterized="false"
+                    isParticipateToExpension="true" literal="api"
+                    parameterName="" type="7"/>
+            </url>
             <url templateName="queryPhonebook">
                 <path isExpandable="false" isParameterized="false"
                     isParticipateToExpension="true" literal="/"
@@ -45,33 +71,7 @@
                     isRequired="false" literalValue=""
                     parameterName="lastname" queryName="lastname" type="7"/>
             </url>
-            <url templateName="create">
-                <path isExpandable="false" isParameterized="false"
-                    isParticipateToExpension="true" literal="/"
-                    parameterName="" type="7"/>
-                <path isExpandable="false" isParameterized="false"
-                    isParticipateToExpension="true" literal="RTCP"
-                    parameterName="" type="7"/>
-                <path isExpandable="false" isParameterized="false"
-                    isParticipateToExpension="true" literal="/"
-                    parameterName="" type="7"/>
-                <path isExpandable="false" isParameterized="false"
-                    isParticipateToExpension="true" literal="examples"
-                    parameterName="" type="7"/>
-                <path isExpandable="false" isParameterized="false"
-                    isParticipateToExpension="true" literal="/"
-                    parameterName="" type="7"/>
-                <path isExpandable="false" isParameterized="false"
-                    isParticipateToExpension="true" literal="phonebook"
-                    parameterName="" type="7"/>
-                <path isExpandable="false" isParameterized="false"
-                    isParticipateToExpension="true" literal="/"
-                    parameterName="" type="7"/>
-                <path isExpandable="false" isParameterized="false"
-                    isParticipateToExpension="true" literal="api"
-                    parameterName="" type="7"/>
-            </url>
-            <url templateName="getEntry">
+            <url templateName="deleteEntry">
                 <path isExpandable="false" isParameterized="false"
                     isParticipateToExpension="true" literal="/"
                     parameterName="" type="7"/>
@@ -103,7 +103,7 @@
                     isParticipateToExpension="true" literal=""
                     parameterName="id" type="7"/>
             </url>
-            <url templateName="deleteEntry">
+            <url templateName="getEntry">
                 <path isExpandable="false" isParameterized="false"
                     isParticipateToExpension="true" literal="/"
                     parameterName="" type="7"/>

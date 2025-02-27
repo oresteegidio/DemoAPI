@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1740060378924" createdUser="orest"
+    id="5d9ab12e:1951e8712e9:-5e72"
+    selfDescribing="HttpInnova - http localhost" type="http_transport"
+    updatedTimestamp="1740060378924" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig transportName="HttpInnova" transportTemplateName="HTTP"/>
+</editableResource>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editableResource createdTimestamp="1737968659540" createdUser="orest"
-    id="-57d5ea30:194a700a258:-7dd7:1731931949:408339756"
+<editableResource createdTimestamp="1747814492575" createdUser="orest"
+    id="440f7296:196f1d8457b:-7b9e:1731931949:408339756"
     type="infrastructure_component_resource"
-    updatedTimestamp="1737968659540" updatedUser="orest" version="1.1">
+    updatedTimestamp="1747814492575" updatedUser="orest" version="1.1">
     <syncdetails compare="AddNumbersService/AddNumbersPort"
-        lastSynced="1737968659540" sourceid="-57d5ea30:194a700a258:-7dd7">
+        lastSynced="1747814492575" sourceid="440f7296:196f1d8457b:-7b9e">
         <sourcepath path="AddNumbersService/AddNumbersPort"/>
     </syncdetails>
     <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
     <resourceConfig infrastructureType="http_transport">
-        <recordingSettings colour="167,250,230"/>
+        <recordingSettings colour="124,199,255"/>
     </resourceConfig>
 </editableResource>

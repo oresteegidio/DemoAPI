@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1747814642654" createdUser="orest"
+    id="440f7296:196f1d8457b:-797f" type="simple_test_data"
+    updatedTimestamp="1747814642654" updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig autoMapColumns="true" columnCount=""
+        datasourceType="Delimited" enc="UTF-8" escapeQuotedString="true"
+        hasColumnNamesLine="true" linesBeforeColumnNames="0"
+        location="%%PROJECT/ROOT_DIRECTORY%%/Logical/addNumbers.wsc/Add.opr/AddNumberDS.csv"
+        loop="false" parsingType="OffsetLength" separator=","
+        treatEmptyStringAsNull="false" treatTextAsEmpty="false"
+        treatTextAsEmptyValue="" treatTextAsNull="true"
+        treatTextAsNullValue="NULL" trim="false"/>
+</editableResource>

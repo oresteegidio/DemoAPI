@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1744203520371" createdUser="orest"
+    id="75246561:1961aa18be6:-7d7b"
+    selfDescribing="oreste.local (192.168.200.1)"
+    type="host_machine_resource" updatedTimestamp="1744203520371"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="192.168.200.1" user_host_name="oreste.local">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>

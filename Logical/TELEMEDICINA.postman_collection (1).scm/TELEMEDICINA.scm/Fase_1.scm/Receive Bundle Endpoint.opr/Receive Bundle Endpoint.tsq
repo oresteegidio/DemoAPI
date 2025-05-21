@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1741166302717" createdUser="orest"
+    id="-533dab64:19565863c96:-7a97"
+    references="-533dab64:19565863c96:-7aea:414097622:408339756"
+    type="test_resource" updatedTimestamp="1741166302922"
+    updatedUser="orest" version="1.1">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig description="" name="">
+        <testTree>
+            <editableResource id="-533dab64:19565863c96:-7a93"
+                references="-533dab64:19565863c96:-7aea:414097622:408339756"
+                selfDescribing="Publish a message and wait for a response to be received.  This can then be validated accordingly."
+                type="send_request_action" version="1.1">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; on resource &quot;/async/automatic-tests/default&quot; using schema &quot;Text&quot; via &quot;develop-preprod.pntrctitalia.it_apikeyAuth&quot;" transport="-533dab64:19565863c96:-7aea:414097622:408339756">
+                    <headerMessage meTy="Message" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="MessageType" type="7"
+                            value="http.text.message.type" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="http.text.message.type" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="Method" type="7"
+                            value="POST" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction exp="POST" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="String" name="URL" type="7"
+                            value="/async/automatic-tests/default" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction
+                                    exp="/async/automatic-tests/default" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                        <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version" type="7"
+                                value="" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                            <_c meTy="Message" name="httpHeaders"
+                                type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                                <_c meTy="String" name="Content-Type"
+                                    type="7" value="application/json" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="application/json" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                                <_c meTy="String" name="Authorization"
+                                    type="7"
+                                    value="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsIng1YyI6WyJNSUlGd3pDQ0JLdWdBd0lCQWdJR0FaVVphVTJpTUEwR0NTcUdTSWIzRFFFQkN3VUFNR0V4SERBYUJnTlZCQU1NRTA1RlZDQkpVbFFnUTNKbFlYUnZjaUF3TGpFeEZUQVRCZ05WQkFvTURGQk9WQzFPUlZRdFNWSlVRekVRTUE0R0ExVUVCd3dIVUdGc1pYSnRiekVMTUFrR0ExVUVDQXdDU1ZReEN6QUpCZ05WQkFZVEFrbFVNQjRYRFRJMU1ESXhPREUwTVRRME5Gb1hEVEkyTURJeE9ERTBNVFEwTkZvd1hURVlNQllHQTFVRUF3d1BZWFYwYjIxaGRHbGpMWFJsYzNSek1SVXdFd1lEVlFRS0RBeFFUbFF0VGtWVUxVbFNWRU14RURBT0JnTlZCQWNNQjFCaGJHVnliVzh4Q3pBSkJnTlZCQWdNQWtsVU1Rc3dDUVlEVlFRR0V3SkpWRENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNZ3ZVanJkbHI3VVd1Q1NpekM4MjNwTlQ5VjJ1RW13ZzdZeVAxclNJSGYxQzVXWDlDVmpDK05zN2FycGRTeFZzNlAzM2Z3K25nV2FCTmJ3YlZGd1MyZnlpSlI4UjVheFh6MTBBZG04UCtEdXBXd29naEFaMlNPcUM5OFA2VXZibk02bXN4TCszVlZ3Sm5DYzhRSnNyTUpFemRZWEdIZXo3aURvQVRzd0ErUm10QnZTdUR0S0VrNW1Ma2ZqWjkxVUQxUEFFU2ZMZThvamV1a1IrVXYxQjdGNjhkbUZnZ1FJa1ZmTGxWdUZVQUZGdk5QUTN3Mm9lUjZZUThETVMwU3IzS1FNbkc3MVAxOXNjb010Ykh3bW5lTUxsOVllR043UmJvZVBiYW84Ty9GdHhzRWV3czdHSno1cnIwcHNyZk45VXRTZm9ndlVJYmd4U1kyRXpYMnlFbmNDQXdFQUFhT0NBb013Z2dKL01Bc0dBMVVkRHdRRUF3SUZvRENDQVRNR0ExVWREZ1NDQVNvRWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1JSUJOd1lEVlIwakJJSUJMakNDQVNxQWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQmcwMDh6bnV0eVA3SzNyaVc2Y0NHOGdVaUJwYVYvNGMvRERBV0RsRXV5WHBER0lWWDBHd1BMekZYZGJsY2hpQjUycHdnVTQyczliNFRXeGNsVUZFcW9ScTQ1MHhEVm5qQ0VHaFJ1dDg4LzBVOXpqZHZFWTBMdERSUnFSUld2aHkrbTZSZWg2RFVNVDNGSE9pZWN6WkxDc0c4a0Fhd2d5TElORzNwY1pXeVZoTVY1RXd2SG5HdFNCUHBFSVcrV1lQc1p5dHdRUXA3ZGtRbjhvcUU5QVUwbGp5ZVRucWppYlk0bFUxMEFqb2JvK2ZFdGtlZGlacWc1UGpsRVdjZ3NBWGUxQUVZKzIyVmdqSlp3c2ZLR2pQWkxTdThPNUUvUFpDSEhESEd1QzVaWnlXR1AzTTZFQ2NBRkNOZTd4NzA5d0VheERCaUtuUlF0V2o2Q29zdk85M0tkIl19.eyJpc3MiOiJhdXRvbWF0aWMtdGVzdHMiLCJzdWIiOiJhdXRvbWF0aWMtdGVzdHMiLCJhdWQiOiJwbnQtbmV0IiwiaWF0IjoxNzQxMTA0MjY2LCJuYmYiOjE3NDExMDQyNjYsImV4cCI6MTc3MjY0MDI2Niwic2lnbmVkX2hlYWRlcnMiOnsiZGlnZXN0IjoiU0hBLTI1Nj0wNGEwZjdlMmJhZTE4YjViMWNhZGIyNzk0ODgyNzRiNTg0NmE5NzQzZTg2NTI3ZGE4NDg5ZjkzMTE3YTY0YzU0In19.tsbgKE6LdLmuZSWZWa6ILFmcWITQYp7rmi8RJJnHwa3DjnasJ7LZ6qDiJXlmdOzZ3sh3g5tLaAzt34I66ZS-SQdrCbuXuxA92j_Wsn38RnSrWL_0Z4w4qFEa3rZ48-pVyrkRPLwbHHy1EafGqRklZF4ekHvy7D4uAmGmceE-7LLk6w-780zVCYCVFI02G-OOfdK41VKN9peqrx4stqpgiy3tMpWy4Su6vAlzMYJKoFSaFW1tIKS1AIynrX04HdJS648N5VtJ9EXGN1LGfKeCNV8zDyl3C2iIGKS_HLoCD_8aORQ3ZP4dOBEEyyRbeAIxYaJIBHfIZJurVO31xsQmMg" version="1.2">
+                                    <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction
+                                    exp="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsIng1YyI6WyJNSUlGd3pDQ0JLdWdBd0lCQWdJR0FaVVphVTJpTUEwR0NTcUdTSWIzRFFFQkN3VUFNR0V4SERBYUJnTlZCQU1NRTA1RlZDQkpVbFFnUTNKbFlYUnZjaUF3TGpFeEZUQVRCZ05WQkFvTURGQk9WQzFPUlZRdFNWSlVRekVRTUE0R0ExVUVCd3dIVUdGc1pYSnRiekVMTUFrR0ExVUVDQXdDU1ZReEN6QUpCZ05WQkFZVEFrbFVNQjRYRFRJMU1ESXhPREUwTVRRME5Gb1hEVEkyTURJeE9ERTBNVFEwTkZvd1hURVlNQllHQTFVRUF3d1BZWFYwYjIxaGRHbGpMWFJsYzNSek1SVXdFd1lEVlFRS0RBeFFUbFF0VGtWVUxVbFNWRU14RURBT0JnTlZCQWNNQjFCaGJHVnliVzh4Q3pBSkJnTlZCQWdNQWtsVU1Rc3dDUVlEVlFRR0V3SkpWRENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNZ3ZVanJkbHI3VVd1Q1NpekM4MjNwTlQ5VjJ1RW13ZzdZeVAxclNJSGYxQzVXWDlDVmpDK05zN2FycGRTeFZzNlAzM2Z3K25nV2FCTmJ3YlZGd1MyZnlpSlI4UjVheFh6MTBBZG04UCtEdXBXd29naEFaMlNPcUM5OFA2VXZibk02bXN4TCszVlZ3Sm5DYzhRSnNyTUpFemRZWEdIZXo3aURvQVRzd0ErUm10QnZTdUR0S0VrNW1Ma2ZqWjkxVUQxUEFFU2ZMZThvamV1a1IrVXYxQjdGNjhkbUZnZ1FJa1ZmTGxWdUZVQUZGdk5QUTN3Mm9lUjZZUThETVMwU3IzS1FNbkc3MVAxOXNjb010Ykh3bW5lTUxsOVllR043UmJvZVBiYW84Ty9GdHhzRWV3czdHSno1cnIwcHNyZk45VXRTZm9ndlVJYmd4U1kyRXpYMnlFbmNDQXdFQUFhT0NBb013Z2dKL01Bc0dBMVVkRHdRRUF3SUZvRENDQVRNR0ExVWREZ1NDQVNvRWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1JSUJOd1lEVlIwakJJSUJMakNDQVNxQWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQmcwMDh6bnV0eVA3SzNyaVc2Y0NHOGdVaUJwYVYvNGMvRERBV0RsRXV5WHBER0lWWDBHd1BMekZYZGJsY2hpQjUycHdnVTQyczliNFRXeGNsVUZFcW9ScTQ1MHhEVm5qQ0VHaFJ1dDg4LzBVOXpqZHZFWTBMdERSUnFSUld2aHkrbTZSZWg2RFVNVDNGSE9pZWN6WkxDc0c4a0Fhd2d5TElORzNwY1pXeVZoTVY1RXd2SG5HdFNCUHBFSVcrV1lQc1p5dHdRUXA3ZGtRbjhvcUU5QVUwbGp5ZVRucWppYlk0bFUxMEFqb2JvK2ZFdGtlZGlacWc1UGpsRVdjZ3NBWGUxQUVZKzIyVmdqSlp3c2ZLR2pQWkxTdThPNUUvUFpDSEhESEd1QzVaWnlXR1AzTTZFQ2NBRkNOZTd4NzA5d0VheERCaUtuUlF0V2o2Q29zdk85M0tkIl19.eyJpc3MiOiJhdXRvbWF0aWMtdGVzdHMiLCJzdWIiOiJhdXRvbWF0aWMtdGVzdHMiLCJhdWQiOiJwbnQtbmV0IiwiaWF0IjoxNzQxMTA0MjY2LCJuYmYiOjE3NDExMDQyNjYsImV4cCI6MTc3MjY0MDI2Niwic2lnbmVkX2hlYWRlcnMiOnsiZGlnZXN0IjoiU0hBLTI1Nj0wNGEwZjdlMmJhZTE4YjViMWNhZGIyNzk0ODgyNzRiNTg0NmE5NzQzZTg2NTI3ZGE4NDg5ZjkzMTE3YTY0YzU0In19.tsbgKE6LdLmuZSWZWa6ILFmcWITQYp7rmi8RJJnHwa3DjnasJ7LZ6qDiJXlmdOzZ3sh3g5tLaAzt34I66ZS-SQdrCbuXuxA92j_Wsn38RnSrWL_0Z4w4qFEa3rZ48-pVyrkRPLwbHHy1EafGqRklZF4ekHvy7D4uAmGmceE-7LLk6w-780zVCYCVFI02G-OOfdK41VKN9peqrx4stqpgiy3tMpWy4Su6vAlzMYJKoFSaFW1tIKS1AIynrX04HdJS648N5VtJ9EXGN1LGfKeCNV8zDyl3C2iIGKS_HLoCD_8aORQ3ZP4dOBEEyyRbeAIxYaJIBHfIZJurVO31xsQmMg" type="0"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                </_c>
+                            </_c>
+                            <_c meTy="Boolean" name="followRedirects"
+                                type="8" value="true" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction type="0">
+                                    <fieldAction exp="true" type="0"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                    </headerMessage>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction enabled="false" type="1">
+                                <fieldAction anyOrder="false"
+                                    enabled="false" ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c coreTypeInt="7" coreTypeName="String"
+                            name="text"
+                            nodeFormatter="JSON.nodeformatter"
+                            sch="Text" type="12" version="1.2">
+                            <fieldExpander
+                                fieldExpanderID="JSON.fieldexpander"
+                                fieldSchema="JSON" fieldSchemaRoot="Object">
+                                <property name="Format" value="1"/>
+                            </fieldExpander>
+                            <contentTree>{&#xd;
+  "entry" : [ {&#xd;
+    "fullUrl" : "MessageHeader/POD.76958e7b-0e5a-7d888-6bfdc-c67a82cac7",&#xd;
+    "resource" : {&#xd;
+      "eventCoding" : {&#xd;
+        "code" : "MS_NAT_FS1",&#xd;
+        "system" : "https://terminology.pnt.gov/CodeSystem/eventCoding"&#xd;
+      },&#xd;
+      "id" : "POD.76958e7b-0e5a-7d888-6bfdc-c67a82cac7",&#xd;
+      "meta" : {&#xd;
+        "profile" : [ "https://pnt.gov/fhir/StructureDefinition/MessageHeader_groupBy" ]&#xd;
+      },&#xd;
+      "resourceType" : "MessageHeader",&#xd;
+      "source" : {&#xd;
+        "endpoint" : "https://irt.example_telemedicina.it",&#xd;
+        "name" : "IRT_Name"&#xd;
+      }&#xd;
+    }&#xd;
+  }, {&#xd;
+    "fullUrl" : "HealthcareService/POD.114a8547-3c29-f2234-69227-66b2cffede",&#xd;
+    "resource" : {&#xd;
+      "active" : true,&#xd;
+      "category" : [ {&#xd;
+        "coding" : [ {&#xd;
+          "code" : "TM",&#xd;
+          "display" : "Telemonitoraggio",&#xd;
+          "system" : "https://terminology.pnt.gov/CodeSystem/ambito-telemedicina"&#xd;
+        } ]&#xd;
+      } ],&#xd;
+      "id" : "POD.114a8547-3c29-f2234-69227-66b2cffede",&#xd;
+      "meta" : {&#xd;
+        "profile" : [ "https://pnt.gov/fhir/StructureDefinition/HealthcareService" ]&#xd;
+      },&#xd;
+      "resourceType" : "HealthcareService"&#xd;
+    }&#xd;
+  }, {&#xd;
+    "fullUrl" : "ServiceRequest/POD.c0b592ec-94ac-52e52-23475-799628f47a",&#xd;
+    "resource" : {&#xd;
+      "category" : [ {&#xd;
+        "coding" : [ {&#xd;
+          "code" : "11",&#xd;
+          "display" : "Lab. analisi chimico cliniche e microbiologiche - Microbiologia â€“ Virologia - Anatomia e istologia patologica - GeneticaImmunoematologia e s. trasf.",&#xd;
+          "system" : "https://terminology.pnt.gov/CodeSystem/brancaPrestazione"&#xd;
+        } ]&#xd;
+      }, {&#xd;
+        "coding" : [ {&#xd;
+          "code" : "NSSN",&#xd;
+          "system" : "https://terminology.pnt.gov/CodeSystem/regimeErogazione"&#xd;
+        } ]&#xd;
+      } ],&#xd;
+      "code" : {&#xd;
+        "coding" : [ {&#xd;
+          "code" : "39.99.5",&#xd;
+          "system" : "https://terminology.pnt.gov/CodeSystem/catalogoNazionalePrestazioni"&#xd;
+        }, {&#xd;
+          "code" : "unknown",&#xd;
+          "system" : "https://terminology.pnt.gov/CodeSystem/catalogoRegionalePrestazioni"&#xd;
+        } ]&#xd;
+      },&#xd;
+      "extension" : [ {&#xd;
+        "url" : "https://pnt.gov/fhir/StructureDefinition/extension_ServiceRequest_periodoDiRaggruppamento",&#xd;
+        "valuePeriod" : {&#xd;
+          "end" : "2025-01-31",&#xd;
+          "start" : "2025-01-01"&#xd;
+        }&#xd;
+      }, {&#xd;
+        "url" : "https://pnt.gov/fhir/StructureDefinition/extension-serviceRequest-businessStatus",&#xd;
+        "valueCodeableConcept" : {&#xd;
+          "coding" : [ {&#xd;
+            "code" : "dropout",&#xd;
+            "system" : "https://terminology.pnt.gov/CodeSystem/businessStatusCodes"&#xd;
+          } ]&#xd;
+        }&#xd;
+      }, {&#xd;
+        "url" : "https://pnt.gov/fhir/StructureDefinition/extension_serviceRequest_numeroQuantitaPrestazioni",&#xd;
+        "valueInteger" : "558323997"&#xd;
+      } ],&#xd;
+      "id" : "POD.c0b592ec-94ac-52e52-23475-799628f47a",&#xd;
+      "intent" : "order",&#xd;
+      "meta" : {&#xd;
+        "profile" : [ "https://pnt.gov/fhir/StructureDefinition/ServiceRequest_groupBy" ]&#xd;
+      },&#xd;
+      "performer" : [ {&#xd;
+        "reference" : "HealthcareService/POD.114a8547-3c29-f2234-69227-66b2cffede"&#xd;
+      }, {&#xd;
+        "reference" : "Organization/POD.4b1ee1ac-0bd0-19abc-7d666-f46328b1cb"&#xd;
+      } ],&#xd;
+      "reasonCode" : [ {&#xd;
+        "coding" : [ {&#xd;
+          "code" : "246.1",&#xd;
+          "display" : "GOZZO DISORMONOGENICO",&#xd;
+          "system" : "https://terminology.pnt.gov/CodeSystem/diagnosiICD9CM"&#xd;
+        } ]&#xd;
+      } ],&#xd;
+      "requester" : [ {&#xd;
+        "reference" : "Organization/POD.cc57c5d0-1820-5ea18-c0bde-bf655316b8"&#xd;
+      } ],&#xd;
+      "resourceType" : "ServiceRequest",&#xd;
+      "status" : "completed",&#xd;
+      "subject" : [ {&#xd;
+        "reference" : "Group/POD.caa68b59-d5ad-17d6d-ae38a-24a76c5927"&#xd;
+      } ]&#xd;
+    }&#xd;
+  }, {&#xd;
+    "fullUrl" : "Organization/POD.cc57c5d0-1820-5ea18-c0bde-bf655316b8",&#xd;
+    "resource" : {&#xd;
+      "active" : true,&#xd;
+      "address" : [ {&#xd;
+        "_district" : {&#xd;
+          "extension" : [ {&#xd;
+            "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",&#xd;
+            "valueCoding" : {&#xd;
+              "code" : "052",&#xd;
+              "display" : "Siena",&#xd;
+              "system" : "https://terminology.pnt.gov/CodeSystem/istat-unitaAmministrativeTerritoriali"&#xd;
+            }&#xd;
+          } ]&#xd;
+        }&#xd;
+      } ],&#xd;
+      "extension" : [ {&#xd;
+        "url" : "https://hl7.org/fhir/StructureDefinition/iso21090-SC-cofing",&#xd;
+        "valueCodeableConcept" : {&#xd;
+          "coding" : [ {&#xd;
+            "code" : "052",&#xd;
+            "display" : "Siena",&#xd;
+            "system" : "https://terminology.pnt.gov/CodeSystem/istat-unitaAmministrativeTerritoriali"&#xd;
+          } ]&#xd;
+        }&#xd;
+      } ],&#xd;
+      "id" : "POD.cc57c5d0-1820-5ea18-c0bde-bf655316b8",&#xd;
+      "identifier" : [ {&#xd;
+        "system" : "https://terminology.pnt.gov/CodeSystem/STS11",&#xd;
+        "value" : "050114"&#xd;
+      } ],&#xd;
+      "meta" : {&#xd;
+        "profile" : [ "https://pnt.gov/fhir/StructureDefinition/Organization_groupBy" ]&#xd;
+      },&#xd;
+      "resourceType" : "Organization",&#xd;
+      "type" : [ {&#xd;
+        "coding" : [ {&#xd;
+          "code" : "irccs-fond",&#xd;
+          "display" : "Fondazione IRCCS",&#xd;
+          "system" : "https://terminology.pnt.gov/CodeSystem/tipoEntita"&#xd;
+        } ]&#xd;
+      } ]&#xd;
+    }&#xd;
+  }, {&#xd;
+    "fullUrl" : "Organization/POD.4b1ee1ac-0bd0-19abc-7d666-f46328b1cb",&#xd;
+    "resource" : {&#xd;
+      "active" : true,&#xd;
+      "address" : [ {&#xd;
+        "_district" : {&#xd;
+          "extension" : [ {&#xd;
+            "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",&#xd;
+            "valueCoding" : {&#xd;
+              "code" : "227",&#xd;
+              "display" : "Venezia",&#xd;
+              "system" : "https://terminology.pnt.gov/CodeSystem/istat-unitaAmministrativeTerritoriali"&#xd;
+            }&#xd;
+          } ]&#xd;
+        }&#xd;
+      } ],&#xd;
+      "id" : "POD.4b1ee1ac-0bd0-19abc-7d666-f46328b1cb",&#xd;
+      "identifier" : [ {&#xd;
+        "system" : "https://terminology.pnt.gov/CodeSystem/STS11",&#xd;
+        "value" : "030311"&#xd;
+      } ],&#xd;
+      "meta" : {&#xd;
+        "profile" : [ "https://pnt.gov/fhir/StructureDefinition/Organization_groupBy" ]&#xd;
+      },&#xd;
+      "resourceType" : "Organization",&#xd;
+      "type" : [ {&#xd;
+        "coding" : [ {&#xd;
+          "code" : "ente-ric-hsp",&#xd;
+          "display" : "Ente di Ricerca",&#xd;
+          "system" : "https://terminology.pnt.gov/CodeSystem/tipoEntita"&#xd;
+        } ]&#xd;
+      } ]&#xd;
+    }&#xd;
+  }, {&#xd;
+    "fullUrl" : "Group/POD.caa68b59-d5ad-17d6d-ae38a-24a76c5927",&#xd;
+    "resource" : {&#xd;
+      "actual" : true,&#xd;
+      "characteristic" : [ {&#xd;
+        "code" : {&#xd;
+          "coding" : [ {&#xd;
+            "code" : "fasceEta",&#xd;
+            "system" : "https://terminology.pnt.gov/CodeSystem/groupCharacteristic"&#xd;
+          } ]&#xd;
+        },&#xd;
+        "exclude" : false,&#xd;
+        "valueCodeableConcept" : {&#xd;
+          "coding" : [ {&#xd;
+            "code" : "65-69a",&#xd;
+            "system" : "https://terminology.pnt.gov/CodeSystem/fasce-eta"&#xd;
+          } ]&#xd;
+        }&#xd;
+      }, {&#xd;
+        "code" : {&#xd;
+          "coding" : [ {&#xd;
+            "code" : "sesso",&#xd;
+            "system" : "https://terminology.pnt.gov/CodeSystem/groupCharacteristic"&#xd;
+          } ]&#xd;
+        },&#xd;
+        "exclude" : false,&#xd;
+        "valueCodeableConcept" : {&#xd;
+          "coding" : [ {&#xd;
+            "code" : "unknown",&#xd;
+            "system" : "http://hl7.org/fhir/administrative-gender"&#xd;
+          } ]&#xd;
+        }&#xd;
+      }, {&#xd;
+        "code" : {&#xd;
+          "coding" : [ {&#xd;
+            "code" : "aslAssistito",&#xd;
+            "system" : "https://terminology.pnt.gov/CodeSystem/groupCharacteristic"&#xd;
+          } ]&#xd;
+        },&#xd;
+        "exclude" : false,&#xd;
+        "valueCodeableConcept" : {&#xd;
+          "coding" : [ {&#xd;
+            "code" : "160113",&#xd;
+            "system" : "https://terminology.pnt.gov/CodeSystem/minsan-fls"&#xd;
+          } ]&#xd;
+        }&#xd;
+      } ],&#xd;
+      "id" : "POD.caa68b59-d5ad-17d6d-ae38a-24a76c5927",&#xd;
+      "meta" : {&#xd;
+        "profile" : [ "https://pnt.gov/fhir/StructureDefinition/Group" ]&#xd;
+      },&#xd;
+      "resourceType" : "Group",&#xd;
+      "type" : "person"&#xd;
+    }&#xd;
+  } ],&#xd;
+  "id" : "POD.49790155-a141-e7094-e7f04-a2c32eddb5",&#xd;
+  "meta" : {&#xd;
+    "profile" : [ "https://pnt.gov/fhir/StructureDefinition/Bundle_message_groupBy" ],&#xd;
+    "tag" : [ {&#xd;
+      "code" : "IRT136",&#xd;
+      "display" : "Infrastruttura regionale di telemedicina Abruzzo",&#xd;
+      "system" : "https://pnt.gov/tag/CodiceApplicativoInviante"&#xd;
+    }, {&#xd;
+      "code" : "050",&#xd;
+      "display" : "VENETO",&#xd;
+      "system" : "https://terminology.pnt.gov/CodeSystem/CodiceRegione"&#xd;
+    }, {&#xd;
+      "code" : "4a5ed2d4-810e-46b9-ae13-73838b6c9a8d",&#xd;
+      "system" : "https://pnt.gov/tag/CodiceInstallazioneProdottoInviante"&#xd;
+    } ]&#xd;
+  },&#xd;
+  "resourceType" : "Bundle",&#xd;
+  "timestamp" : "2025-02-25T11:37:21.200+01:00",&#xd;
+  "type" : "message"&#xd;
+}<defaultActions>
+                                    <defaultMessageActions>
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                    <fieldAction type="0">
+                                    <fieldAction type="100"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="5"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultMessageActions>
+                                    <defaultScalarActions>
+                                    <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="0"/>
+                                    </fieldAction>
+                                    <fieldAction type="0">
+                                    <fieldAction type="0"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false" type="5"/>
+                                    </fieldAction>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction
+                                    enabled="false"
+                                    type="6"
+                                    typeActionAllType="true" typeActionMetaType="false"/>
+                                    </fieldAction>
+                                    </fieldActionGroup>
+                                    </defaultScalarActions>
+                                </defaultActions>
+                                <updates>
+                                    <updateField path="/text/Object">
+                                    <_c assocdefid="Object"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/fullUrl">
+                                    <_c value="MessageHeader/POD.76958e7b-0e5a-7d888-6bfdc-c67a82cac7"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/resource/eventCoding/code">
+                                    <_c value="MS_NAT_FS1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/resource/eventCoding/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/eventCoding"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/resource/id">
+                                    <_c value="POD.76958e7b-0e5a-7d888-6bfdc-c67a82cac7"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/resource/meta/profile">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/resource/meta/profile/0">
+                                    <_c name="0" value="https://pnt.gov/fhir/StructureDefinition/MessageHeader_groupBy"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/resource/resourceType">
+                                    <_c value="MessageHeader"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/resource/source/endpoint">
+                                    <_c value="https://irt.example_telemedicina.it"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/0/resource/source/name">
+                                    <_c value="IRT_Name"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/fullUrl">
+                                    <_c value="HealthcareService/POD.114a8547-3c29-f2234-69227-66b2cffede"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/active">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/category">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/category/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/category/0/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/category/0/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/category/0/coding/0/code">
+                                    <_c value="TM"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/category/0/coding/0/display">
+                                    <_c value="Telemonitoraggio"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/category/0/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/ambito-telemedicina"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/id">
+                                    <_c value="POD.114a8547-3c29-f2234-69227-66b2cffede"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/meta/profile">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/meta/profile/0">
+                                    <_c name="0" value="https://pnt.gov/fhir/StructureDefinition/HealthcareService"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/1/resource/resourceType">
+                                    <_c value="HealthcareService"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2">
+                                    <_c name="2"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/fullUrl">
+                                    <_c value="ServiceRequest/POD.c0b592ec-94ac-52e52-23475-799628f47a"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/0/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/0/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/0/coding/0/code">
+                                    <_c value="11"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/0/coding/0/display">
+                                    <_c value="Lab. analisi chimico cliniche e microbiologiche - Microbiologia â€“ Virologia - Anatomia e istologia patologica - GeneticaImmunoematologia e s. trasf."/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/0/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/brancaPrestazione"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/1/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/1/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/1/coding/0/code">
+                                    <_c value="NSSN"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/category/1/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/regimeErogazione"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/code/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/code/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/code/coding/0/code">
+                                    <_c value="39.99.5"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/code/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/catalogoNazionalePrestazioni"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/code/coding/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/code/coding/1/code">
+                                    <_c value="unknown"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/code/coding/1/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/catalogoRegionalePrestazioni"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/0/url">
+                                    <_c value="https://pnt.gov/fhir/StructureDefinition/extension_ServiceRequest_periodoDiRaggruppamento"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/0/valuePeriod/end">
+                                    <_c value="2025-01-31"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/0/valuePeriod/start">
+                                    <_c value="2025-01-01"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/1/url">
+                                    <_c value="https://pnt.gov/fhir/StructureDefinition/extension-serviceRequest-businessStatus"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/1/valueCodeableConcept/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/1/valueCodeableConcept/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/1/valueCodeableConcept/coding/0/code">
+                                    <_c value="dropout"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/1/valueCodeableConcept/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/businessStatusCodes"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/2">
+                                    <_c name="2"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/2/url">
+                                    <_c value="https://pnt.gov/fhir/StructureDefinition/extension_serviceRequest_numeroQuantitaPrestazioni"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/extension/2/valueInteger">
+                                    <_c value="558323997"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/id">
+                                    <_c value="POD.c0b592ec-94ac-52e52-23475-799628f47a"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/intent">
+                                    <_c value="order"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/meta/profile">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/meta/profile/0">
+                                    <_c name="0" value="https://pnt.gov/fhir/StructureDefinition/ServiceRequest_groupBy"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/performer">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/performer/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/performer/0/reference">
+                                    <_c value="HealthcareService/POD.114a8547-3c29-f2234-69227-66b2cffede"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/performer/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/performer/1/reference">
+                                    <_c value="Organization/POD.4b1ee1ac-0bd0-19abc-7d666-f46328b1cb"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/reasonCode">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/reasonCode/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/reasonCode/0/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/reasonCode/0/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/reasonCode/0/coding/0/code">
+                                    <_c value="246.1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/reasonCode/0/coding/0/display">
+                                    <_c value="GOZZO DISORMONOGENICO"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/reasonCode/0/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/diagnosiICD9CM"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/requester">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/requester/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/requester/0/reference">
+                                    <_c value="Organization/POD.cc57c5d0-1820-5ea18-c0bde-bf655316b8"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/resourceType">
+                                    <_c value="ServiceRequest"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/status">
+                                    <_c value="completed"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/subject">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/subject/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/2/resource/subject/0/reference">
+                                    <_c value="Group/POD.caa68b59-d5ad-17d6d-ae38a-24a76c5927"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3">
+                                    <_c name="3"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/fullUrl">
+                                    <_c value="Organization/POD.cc57c5d0-1820-5ea18-c0bde-bf655316b8"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/active">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/address">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/address/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/address/0/_district/extension">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/address/0/_district/extension/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/address/0/_district/extension/0/url">
+                                    <_c value="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/address/0/_district/extension/0/valueCoding/code">
+                                    <_c value="052"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/address/0/_district/extension/0/valueCoding/display">
+                                    <_c value="Siena"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/address/0/_district/extension/0/valueCoding/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/istat-unitaAmministrativeTerritoriali"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/extension">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/extension/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/extension/0/url">
+                                    <_c value="https://hl7.org/fhir/StructureDefinition/iso21090-SC-cofing"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/extension/0/valueCodeableConcept/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/extension/0/valueCodeableConcept/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/extension/0/valueCodeableConcept/coding/0/code">
+                                    <_c value="052"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/extension/0/valueCodeableConcept/coding/0/display">
+                                    <_c value="Siena"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/extension/0/valueCodeableConcept/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/istat-unitaAmministrativeTerritoriali"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/id">
+                                    <_c value="POD.cc57c5d0-1820-5ea18-c0bde-bf655316b8"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/identifier">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/identifier/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/identifier/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/STS11"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/identifier/0/value">
+                                    <_c value="050114"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/meta/profile">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/meta/profile/0">
+                                    <_c name="0" value="https://pnt.gov/fhir/StructureDefinition/Organization_groupBy"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/resourceType">
+                                    <_c value="Organization"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/type">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/type/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/type/0/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/type/0/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/type/0/coding/0/code">
+                                    <_c value="irccs-fond"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/type/0/coding/0/display">
+                                    <_c value="Fondazione IRCCS"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/3/resource/type/0/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/tipoEntita"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4">
+                                    <_c name="4"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/fullUrl">
+                                    <_c value="Organization/POD.4b1ee1ac-0bd0-19abc-7d666-f46328b1cb"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/active">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/address">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/address/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/address/0/_district/extension">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/address/0/_district/extension/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/address/0/_district/extension/0/url">
+                                    <_c value="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/address/0/_district/extension/0/valueCoding/code">
+                                    <_c value="227"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/address/0/_district/extension/0/valueCoding/display">
+                                    <_c value="Venezia"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/address/0/_district/extension/0/valueCoding/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/istat-unitaAmministrativeTerritoriali"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/id">
+                                    <_c value="POD.4b1ee1ac-0bd0-19abc-7d666-f46328b1cb"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/identifier">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/identifier/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/identifier/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/STS11"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/identifier/0/value">
+                                    <_c value="030311"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/meta/profile">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/meta/profile/0">
+                                    <_c name="0" value="https://pnt.gov/fhir/StructureDefinition/Organization_groupBy"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/resourceType">
+                                    <_c value="Organization"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/type">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/type/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/type/0/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/type/0/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/type/0/coding/0/code">
+                                    <_c value="ente-ric-hsp"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/type/0/coding/0/display">
+                                    <_c value="Ente di Ricerca"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/4/resource/type/0/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/tipoEntita"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5">
+                                    <_c name="5"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/fullUrl">
+                                    <_c value="Group/POD.caa68b59-d5ad-17d6d-ae38a-24a76c5927"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/actual">
+                                    <_c value="true"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/code/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/code/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/code/coding/0/code">
+                                    <_c value="fasceEta"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/code/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/groupCharacteristic"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/exclude">
+                                    <_c value="false"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/valueCodeableConcept/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/valueCodeableConcept/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/valueCodeableConcept/coding/0/code">
+                                    <_c value="65-69a"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/0/valueCodeableConcept/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/fasce-eta"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/code/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/code/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/code/coding/0/code">
+                                    <_c value="sesso"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/code/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/groupCharacteristic"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/exclude">
+                                    <_c value="false"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/valueCodeableConcept/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/valueCodeableConcept/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/valueCodeableConcept/coding/0/code">
+                                    <_c value="unknown"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/1/valueCodeableConcept/coding/0/system">
+                                    <_c value="http://hl7.org/fhir/administrative-gender"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2">
+                                    <_c name="2"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/code/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/code/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/code/coding/0/code">
+                                    <_c value="aslAssistito"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/code/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/groupCharacteristic"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/exclude">
+                                    <_c value="false"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/valueCodeableConcept/coding">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/valueCodeableConcept/coding/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/valueCodeableConcept/coding/0/code">
+                                    <_c value="160113"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/characteristic/2/valueCodeableConcept/coding/0/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/minsan-fls"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/id">
+                                    <_c value="POD.caa68b59-d5ad-17d6d-ae38a-24a76c5927"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/meta/profile">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/meta/profile/0">
+                                    <_c name="0" value="https://pnt.gov/fhir/StructureDefinition/Group"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/resourceType">
+                                    <_c value="Group"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/entry/5/resource/type">
+                                    <_c value="person"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/id">
+                                    <_c value="POD.49790155-a141-e7094-e7f04-a2c32eddb5"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/profile">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/profile/0">
+                                    <_c name="0" value="https://pnt.gov/fhir/StructureDefinition/Bundle_message_groupBy"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag">
+                                    <_c assocdefid="Array"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/0">
+                                    <_c name="0"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/0/code">
+                                    <_c value="IRT136"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/0/display">
+                                    <_c value="Infrastruttura regionale di telemedicina Abruzzo"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/0/system">
+                                    <_c value="https://pnt.gov/tag/CodiceApplicativoInviante"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/1">
+                                    <_c name="1"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/1/code">
+                                    <_c value="050"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/1/display">
+                                    <_c value="VENETO"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/1/system">
+                                    <_c value="https://terminology.pnt.gov/CodeSystem/CodiceRegione"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/2">
+                                    <_c name="2"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/2/code">
+                                    <_c value="4a5ed2d4-810e-46b9-ae13-73838b6c9a8d"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/meta/tag/2/system">
+                                    <_c value="https://pnt.gov/tag/CodiceInstallazioneProdottoInviante"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/resourceType">
+                                    <_c value="Bundle"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/timestamp">
+                                    <_c value="2025-02-25T11:37:21.200+01:00"/>
+                                    </updateField>
+                                    <updateField path="/text/Object/type">
+                                    <_c value="message"/>
+                                    </updateField>
+                                </updates>
+                            </contentTree>
+                            <fieldActionGroup>
+                                <fieldAction type="0">
+                                    <fieldAction type="4"/>
+                                </fieldAction>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="7"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+            <editableResource id="-533dab64:19565863c96:-7a8f"
+                references="-533dab64:19565863c96:-7aea:414097622:408339756"
+                selfDescribing="Receive and validate a response to the request you have sent."
+                type="receive_reply_action" version="1.1">
+                <loggingConfiguration debug="false"
+                    resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+                <resourceConfig description="" formatter="HTTP_Message"
+                    name="&quot;Text&quot; using schema &quot;Text&quot; timeout 30000ms"
+                    sendRequestID="-533dab64:19565863c96:-7a93"
+                    timeout="30000" transport="-533dab64:19565863c96:-7aea:414097622:408339756">
+                    <headerMessage assocdefid="Http Receive Reply"
+                        meTy="Message" name="" sch="Http Receive Reply"
+                        type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c meTy="String" name="StatusCode"
+                            sch="Http Receive Reply" type="7" version="1.2"/>
+                        <_c meTy="String" name="ReasonPhrase"
+                            sch="Http Receive Reply" type="7" version="1.2"/>
+                        <_c meTy="Message" name="httpDetails"
+                            sch="Http Receive Reply" type="12" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                            <_c meTy="String" name="Version"
+                                sch="Http Receive Reply" type="7" version="1.2"/>
+                            <_c meTy="Message" name="httpHeaders"
+                                sch="Http Receive Reply" type="12" version="1.2">
+                                <fieldActionGroup>
+                                    <fieldAction enabled="false" type="1">
+                                    <fieldAction anyOrder="false"
+                                    enabled="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                                    </fieldAction>
+                                </fieldActionGroup>
+                            </_c>
+                        </_c>
+                        <_c meTy="String" name="MessageType"
+                            sch="Http Receive Reply" type="7" version="1.2"/>
+                        <_c meTy="Date-Time" name="rcvdTimestamp"
+                            sch="Http Receive Reply" type="11" version="1.2"/>
+                    </headerMessage>
+                    <subconfig MessageType="http.text.message.type"
+                        _version="1.1" formatter="HTTP_Message" transport="-533dab64:19565863c96:-7aea:414097622:408339756"/>
+                    <bodyMessage assocdefid="Text" name="Text"
+                        sch="Text" type="12" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="1">
+                                <fieldAction anyOrder="false"
+                                    ignoreExtra="false"
+                                    ignoreNonPresent="false" type="100"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                        <_c name="text" sch="Text" type="7" version="1.2">
+                            <fieldActionGroup>
+                                <fieldAction enabled="false" type="1">
+                                    <fieldAction enabled="false" type="0"/>
+                                </fieldAction>
+                            </fieldActionGroup>
+                        </_c>
+                    </bodyMessage>
+                </resourceConfig>
+            </editableResource>
+        </testTree>
+        <tagDataStore inputMode="NONE" outputMode="NONE"/>
+    </resourceConfig>
+</editableResource>

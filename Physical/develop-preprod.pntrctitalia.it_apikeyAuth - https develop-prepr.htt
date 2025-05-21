@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1741166302452" createdUser="orest"
+    id="-533dab64:19565863c96:-7aea:1347754645:1544155186"
+    selfDescribing="develop-preprod.pntrctitalia.it_apikeyAuth - https develop-preprod.pntrctitalia.it"
+    type="http_transport" updatedTimestamp="1741166302452"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig
+        transportName="develop-preprod.pntrctitalia.it_apikeyAuth" transportTemplateName="HTTP">
+        <messageProperties
+            ReasonPhrase="No Stub available that matches the request"
+            clientConnectionsPerHost="100" credDomain="" credPassword=""
+            credPreemptive="false" credType="0" credUser=""
+            httpHost="develop-preprod.pntrctitalia.it" httpNtlmDomain=""
+            httpPort="" httpProxyHost="" httpProxyPassword=""
+            httpProxyPort="" httpProxyUsername="" httpResourceRoot=""
+            httpServerSocketBindAddressOverride=""
+            httpServerSocketPortOverride="" httpSocketTimeout=""
+            httpTimeoutResponseCode="503" httpVirtualHost=""
+            proxyType="http.proxy.default" useSsl="true" version="4">
+            <kerberos Anon="false" CStyle="Username / Password"
+                Conf="false" Custom="true" Enabled="false" Integ="false"
+                MutAuth="false" RepDet="false" SSO="false" SeqCheck="false"/>
+            <oauth authURL="" clientassertion="" clientid=""
+                clientsecret="" enabled="false"
+                redirect_url="http://localhost:8080/callback"
+                refreshtoken="" scopes="" tokenendpoint=""/>
+        </messageProperties>
+    </resourceConfig>
+</editableResource>

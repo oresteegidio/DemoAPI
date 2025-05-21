@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1741166302639" createdUser="orest"
+    id="-533dab64:19565863c96:-7aea:1453832050:-807255066"
+    type="operation_resource" updatedTimestamp="1741166302639"
+    updatedUser="orest" version="1.0">
+    <documentation>
+        <description externalID="11ab6fed-3743-3a7e-98a7-f28a8a7dc891" value="File Location:C:\Users\orest\Desktop\TELEMEDICINA.postman_collection (1).json&#xd;&#xa;"/>
+    </documentation>
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig avgTime="0" color="167,250,230" dependencies=""
+        invokeDynamicFormatterID="http.text.message.type"
+        invokeEndDynamicFormatterID="http.text.message.type"
+        invokeEndFormatterID="HTTP_Message"
+        invokeEndTransportID="-533dab64:19565863c96:-7aea:414097622:408339756"
+        invokeFormatterID="HTTP_Message"
+        invokeTransportID="-533dab64:19565863c96:-7aea:414097622:408339756"
+        maxTime="0" mepEndUsed="true" mepType="IN_OUT" minTime="0"
+        stubDynamicFormatterID="http.text.message.type"
+        stubFormatterID="HTTP_Message" stubTransportID="-533dab64:19565863c96:-7aea:414097622:408339756">
+        <invokeHeaderNode meTy="Message" type="12" version="1.2">
+            <fieldActionGroup>
+                <fieldAction enabled="false" type="1">
+                    <fieldAction anyOrder="false" enabled="false"
+                        ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                </fieldAction>
+            </fieldActionGroup>
+            <_c meTy="String" name="MessageType" type="7"
+                value="http.text.message.type" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="http.text.message.type" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="Method" type="7" value="POST" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction exp="POST" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="String" name="URL" type="7"
+                value="/async/automatic-tests/default" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction type="0">
+                        <fieldAction
+                            exp="/async/automatic-tests/default" type="0"/>
+                    </fieldAction>
+                </fieldActionGroup>
+            </_c>
+            <_c meTy="Message" name="httpDetails" type="12" version="1.2">
+                <fieldActionGroup>
+                    <fieldAction enabled="false" type="1">
+                        <fieldAction anyOrder="false" enabled="false"
+                            ignoreExtra="false" ignoreNonPresent="false" type="100"/>
+                    </fieldAction>
+                </fieldActionGroup>
+                <_c meTy="String" name="Version" type="7" value="" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction type="0">
+                            <fieldAction type="0"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                </_c>
+                <_c meTy="Message" name="httpHeaders" type="12" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction enabled="false" type="1">
+                            <fieldAction anyOrder="false"
+                                enabled="false" ignoreExtra="false"
+                                ignoreNonPresent="false" type="100"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                    <_c meTy="String" name="Content-Type" type="7"
+                        value="application/json" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction exp="application/json" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                    <_c meTy="String" name="Authorization" type="7"
+                        value="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsIng1YyI6WyJNSUlGd3pDQ0JLdWdBd0lCQWdJR0FaVVphVTJpTUEwR0NTcUdTSWIzRFFFQkN3VUFNR0V4SERBYUJnTlZCQU1NRTA1RlZDQkpVbFFnUTNKbFlYUnZjaUF3TGpFeEZUQVRCZ05WQkFvTURGQk9WQzFPUlZRdFNWSlVRekVRTUE0R0ExVUVCd3dIVUdGc1pYSnRiekVMTUFrR0ExVUVDQXdDU1ZReEN6QUpCZ05WQkFZVEFrbFVNQjRYRFRJMU1ESXhPREUwTVRRME5Gb1hEVEkyTURJeE9ERTBNVFEwTkZvd1hURVlNQllHQTFVRUF3d1BZWFYwYjIxaGRHbGpMWFJsYzNSek1SVXdFd1lEVlFRS0RBeFFUbFF0VGtWVUxVbFNWRU14RURBT0JnTlZCQWNNQjFCaGJHVnliVzh4Q3pBSkJnTlZCQWdNQWtsVU1Rc3dDUVlEVlFRR0V3SkpWRENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNZ3ZVanJkbHI3VVd1Q1NpekM4MjNwTlQ5VjJ1RW13ZzdZeVAxclNJSGYxQzVXWDlDVmpDK05zN2FycGRTeFZzNlAzM2Z3K25nV2FCTmJ3YlZGd1MyZnlpSlI4UjVheFh6MTBBZG04UCtEdXBXd29naEFaMlNPcUM5OFA2VXZibk02bXN4TCszVlZ3Sm5DYzhRSnNyTUpFemRZWEdIZXo3aURvQVRzd0ErUm10QnZTdUR0S0VrNW1Ma2ZqWjkxVUQxUEFFU2ZMZThvamV1a1IrVXYxQjdGNjhkbUZnZ1FJa1ZmTGxWdUZVQUZGdk5QUTN3Mm9lUjZZUThETVMwU3IzS1FNbkc3MVAxOXNjb010Ykh3bW5lTUxsOVllR043UmJvZVBiYW84Ty9GdHhzRWV3czdHSno1cnIwcHNyZk45VXRTZm9ndlVJYmd4U1kyRXpYMnlFbmNDQXdFQUFhT0NBb013Z2dKL01Bc0dBMVVkRHdRRUF3SUZvRENDQVRNR0ExVWREZ1NDQVNvRWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1JSUJOd1lEVlIwakJJSUJMakNDQVNxQWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQmcwMDh6bnV0eVA3SzNyaVc2Y0NHOGdVaUJwYVYvNGMvRERBV0RsRXV5WHBER0lWWDBHd1BMekZYZGJsY2hpQjUycHdnVTQyczliNFRXeGNsVUZFcW9ScTQ1MHhEVm5qQ0VHaFJ1dDg4LzBVOXpqZHZFWTBMdERSUnFSUld2aHkrbTZSZWg2RFVNVDNGSE9pZWN6WkxDc0c4a0Fhd2d5TElORzNwY1pXeVZoTVY1RXd2SG5HdFNCUHBFSVcrV1lQc1p5dHdRUXA3ZGtRbjhvcUU5QVUwbGp5ZVRucWppYlk0bFUxMEFqb2JvK2ZFdGtlZGlacWc1UGpsRVdjZ3NBWGUxQUVZKzIyVmdqSlp3c2ZLR2pQWkxTdThPNUUvUFpDSEhESEd1QzVaWnlXR1AzTTZFQ2NBRkNOZTd4NzA5d0VheERCaUtuUlF0V2o2Q29zdk85M0tkIl19.eyJpc3MiOiJhdXRvbWF0aWMtdGVzdHMiLCJzdWIiOiJhdXRvbWF0aWMtdGVzdHMiLCJhdWQiOiJwbnQtbmV0IiwiaWF0IjoxNzQxMTA0MjY2LCJuYmYiOjE3NDExMDQyNjYsImV4cCI6MTc3MjY0MDI2Niwic2lnbmVkX2hlYWRlcnMiOnsiZGlnZXN0IjoiU0hBLTI1Nj0wNGEwZjdlMmJhZTE4YjViMWNhZGIyNzk0ODgyNzRiNTg0NmE5NzQzZTg2NTI3ZGE4NDg5ZjkzMTE3YTY0YzU0In19.tsbgKE6LdLmuZSWZWa6ILFmcWITQYp7rmi8RJJnHwa3DjnasJ7LZ6qDiJXlmdOzZ3sh3g5tLaAzt34I66ZS-SQdrCbuXuxA92j_Wsn38RnSrWL_0Z4w4qFEa3rZ48-pVyrkRPLwbHHy1EafGqRklZF4ekHvy7D4uAmGmceE-7LLk6w-780zVCYCVFI02G-OOfdK41VKN9peqrx4stqpgiy3tMpWy4Su6vAlzMYJKoFSaFW1tIKS1AIynrX04HdJS648N5VtJ9EXGN1LGfKeCNV8zDyl3C2iIGKS_HLoCD_8aORQ3ZP4dOBEEyyRbeAIxYaJIBHfIZJurVO31xsQmMg" version="1.2">
+                        <fieldActionGroup>
+                            <fieldAction type="0">
+                                <fieldAction
+                                    exp="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsIng1YyI6WyJNSUlGd3pDQ0JLdWdBd0lCQWdJR0FaVVphVTJpTUEwR0NTcUdTSWIzRFFFQkN3VUFNR0V4SERBYUJnTlZCQU1NRTA1RlZDQkpVbFFnUTNKbFlYUnZjaUF3TGpFeEZUQVRCZ05WQkFvTURGQk9WQzFPUlZRdFNWSlVRekVRTUE0R0ExVUVCd3dIVUdGc1pYSnRiekVMTUFrR0ExVUVDQXdDU1ZReEN6QUpCZ05WQkFZVEFrbFVNQjRYRFRJMU1ESXhPREUwTVRRME5Gb1hEVEkyTURJeE9ERTBNVFEwTkZvd1hURVlNQllHQTFVRUF3d1BZWFYwYjIxaGRHbGpMWFJsYzNSek1SVXdFd1lEVlFRS0RBeFFUbFF0VGtWVUxVbFNWRU14RURBT0JnTlZCQWNNQjFCaGJHVnliVzh4Q3pBSkJnTlZCQWdNQWtsVU1Rc3dDUVlEVlFRR0V3SkpWRENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNZ3ZVanJkbHI3VVd1Q1NpekM4MjNwTlQ5VjJ1RW13ZzdZeVAxclNJSGYxQzVXWDlDVmpDK05zN2FycGRTeFZzNlAzM2Z3K25nV2FCTmJ3YlZGd1MyZnlpSlI4UjVheFh6MTBBZG04UCtEdXBXd29naEFaMlNPcUM5OFA2VXZibk02bXN4TCszVlZ3Sm5DYzhRSnNyTUpFemRZWEdIZXo3aURvQVRzd0ErUm10QnZTdUR0S0VrNW1Ma2ZqWjkxVUQxUEFFU2ZMZThvamV1a1IrVXYxQjdGNjhkbUZnZ1FJa1ZmTGxWdUZVQUZGdk5QUTN3Mm9lUjZZUThETVMwU3IzS1FNbkc3MVAxOXNjb010Ykh3bW5lTUxsOVllR043UmJvZVBiYW84Ty9GdHhzRWV3czdHSno1cnIwcHNyZk45VXRTZm9ndlVJYmd4U1kyRXpYMnlFbmNDQXdFQUFhT0NBb013Z2dKL01Bc0dBMVVkRHdRRUF3SUZvRENDQVRNR0ExVWREZ1NDQVNvRWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1JSUJOd1lEVlIwakJJSUJMakNDQVNxQWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQmcwMDh6bnV0eVA3SzNyaVc2Y0NHOGdVaUJwYVYvNGMvRERBV0RsRXV5WHBER0lWWDBHd1BMekZYZGJsY2hpQjUycHdnVTQyczliNFRXeGNsVUZFcW9ScTQ1MHhEVm5qQ0VHaFJ1dDg4LzBVOXpqZHZFWTBMdERSUnFSUld2aHkrbTZSZWg2RFVNVDNGSE9pZWN6WkxDc0c4a0Fhd2d5TElORzNwY1pXeVZoTVY1RXd2SG5HdFNCUHBFSVcrV1lQc1p5dHdRUXA3ZGtRbjhvcUU5QVUwbGp5ZVRucWppYlk0bFUxMEFqb2JvK2ZFdGtlZGlacWc1UGpsRVdjZ3NBWGUxQUVZKzIyVmdqSlp3c2ZLR2pQWkxTdThPNUUvUFpDSEhESEd1QzVaWnlXR1AzTTZFQ2NBRkNOZTd4NzA5d0VheERCaUtuUlF0V2o2Q29zdk85M0tkIl19.eyJpc3MiOiJhdXRvbWF0aWMtdGVzdHMiLCJzdWIiOiJhdXRvbWF0aWMtdGVzdHMiLCJhdWQiOiJwbnQtbmV0IiwiaWF0IjoxNzQxMTA0MjY2LCJuYmYiOjE3NDExMDQyNjYsImV4cCI6MTc3MjY0MDI2Niwic2lnbmVkX2hlYWRlcnMiOnsiZGlnZXN0IjoiU0hBLTI1Nj0wNGEwZjdlMmJhZTE4YjViMWNhZGIyNzk0ODgyNzRiNTg0NmE5NzQzZTg2NTI3ZGE4NDg5ZjkzMTE3YTY0YzU0In19.tsbgKE6LdLmuZSWZWa6ILFmcWITQYp7rmi8RJJnHwa3DjnasJ7LZ6qDiJXlmdOzZ3sh3g5tLaAzt34I66ZS-SQdrCbuXuxA92j_Wsn38RnSrWL_0Z4w4qFEa3rZ48-pVyrkRPLwbHHy1EafGqRklZF4ekHvy7D4uAmGmceE-7LLk6w-780zVCYCVFI02G-OOfdK41VKN9peqrx4stqpgiy3tMpWy4Su6vAlzMYJKoFSaFW1tIKS1AIynrX04HdJS648N5VtJ9EXGN1LGfKeCNV8zDyl3C2iIGKS_HLoCD_8aORQ3ZP4dOBEEyyRbeAIxYaJIBHfIZJurVO31xsQmMg" type="0"/>
+                            </fieldAction>
+                        </fieldActionGroup>
+                    </_c>
+                </_c>
+                <_c meTy="Boolean" name="followRedirects" type="8"
+                    value="true" version="1.2">
+                    <fieldActionGroup>
+                        <fieldAction type="0">
+                            <fieldAction exp="true" type="0"/>
+                        </fieldAction>
+                    </fieldActionGroup>
+                </_c>
+            </_c>
+        </invokeHeaderNode>
+        <stubHeaderConfig>
+            <_c MessageType="http.text.message.type" Method="POST"
+                URL="/async/automatic-tests/default"
+                allowSubPath="false" consumerType="Participate"
+                filterHeaders="true" filterMethod="true" filterResourcePath="true">
+                <filterHeadersList>
+                    <header disabled="true" name="Content-Type" type="7" value="application/json"/>
+                    <header disabled="true" name="Authorization"
+                        type="7" value="eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsIng1YyI6WyJNSUlGd3pDQ0JLdWdBd0lCQWdJR0FaVVphVTJpTUEwR0NTcUdTSWIzRFFFQkN3VUFNR0V4SERBYUJnTlZCQU1NRTA1RlZDQkpVbFFnUTNKbFlYUnZjaUF3TGpFeEZUQVRCZ05WQkFvTURGQk9WQzFPUlZRdFNWSlVRekVRTUE0R0ExVUVCd3dIVUdGc1pYSnRiekVMTUFrR0ExVUVDQXdDU1ZReEN6QUpCZ05WQkFZVEFrbFVNQjRYRFRJMU1ESXhPREUwTVRRME5Gb1hEVEkyTURJeE9ERTBNVFEwTkZvd1hURVlNQllHQTFVRUF3d1BZWFYwYjIxaGRHbGpMWFJsYzNSek1SVXdFd1lEVlFRS0RBeFFUbFF0VGtWVUxVbFNWRU14RURBT0JnTlZCQWNNQjFCaGJHVnliVzh4Q3pBSkJnTlZCQWdNQWtsVU1Rc3dDUVlEVlFRR0V3SkpWRENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNZ3ZVanJkbHI3VVd1Q1NpekM4MjNwTlQ5VjJ1RW13ZzdZeVAxclNJSGYxQzVXWDlDVmpDK05zN2FycGRTeFZzNlAzM2Z3K25nV2FCTmJ3YlZGd1MyZnlpSlI4UjVheFh6MTBBZG04UCtEdXBXd29naEFaMlNPcUM5OFA2VXZibk02bXN4TCszVlZ3Sm5DYzhRSnNyTUpFemRZWEdIZXo3aURvQVRzd0ErUm10QnZTdUR0S0VrNW1Ma2ZqWjkxVUQxUEFFU2ZMZThvamV1a1IrVXYxQjdGNjhkbUZnZ1FJa1ZmTGxWdUZVQUZGdk5QUTN3Mm9lUjZZUThETVMwU3IzS1FNbkc3MVAxOXNjb010Ykh3bW5lTUxsOVllR043UmJvZVBiYW84Ty9GdHhzRWV3czdHSno1cnIwcHNyZk45VXRTZm9ndlVJYmd4U1kyRXpYMnlFbmNDQXdFQUFhT0NBb013Z2dKL01Bc0dBMVVkRHdRRUF3SUZvRENDQVRNR0ExVWREZ1NDQVNvRWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1JSUJOd1lEVlIwakJJSUJMakNDQVNxQWdnRW1NSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXlDOVNPdDJXdnRSYTRKS0xNTHpiZWsxUDFYYTRTYkNEdGpJL1d0SWdkL1VMbFpmMEpXTUw0Mnp0cXVsMUxGV3pvL2ZkL0Q2ZUJab0UxdkJ0VVhCTFovS0lsSHhIbHJGZlBYUUIyYncvNE82bGJDaUNFQm5aSTZvTDN3L3BTOXVjenFhekV2N2RWWEFtY0p6eEFteXN3a1ROMWhjWWQ3UHVJT2dCT3pBRDVHYTBHOUs0TzBvU1RtWXVSK05uM1ZRUFU4QVJKOHQ3eWlONjZSSDVTL1VIc1hyeDJZV0NCQWlSVjh1Vlc0VlFBVVc4MDlEZkRhaDVIcGhEd014TFJLdmNwQXljYnZVL1gyeHlneTFzZkNhZDR3dVgxaDRZM3RGdWg0OXRxanc3OFczR3dSN0N6c1luUG11dlNteXQ4MzFTMUoraUM5UWh1REZKallUTmZiSVNkd0lEQVFBQk1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQmcwMDh6bnV0eVA3SzNyaVc2Y0NHOGdVaUJwYVYvNGMvRERBV0RsRXV5WHBER0lWWDBHd1BMekZYZGJsY2hpQjUycHdnVTQyczliNFRXeGNsVUZFcW9ScTQ1MHhEVm5qQ0VHaFJ1dDg4LzBVOXpqZHZFWTBMdERSUnFSUld2aHkrbTZSZWg2RFVNVDNGSE9pZWN6WkxDc0c4a0Fhd2d5TElORzNwY1pXeVZoTVY1RXd2SG5HdFNCUHBFSVcrV1lQc1p5dHdRUXA3ZGtRbjhvcUU5QVUwbGp5ZVRucWppYlk0bFUxMEFqb2JvK2ZFdGtlZGlacWc1UGpsRVdjZ3NBWGUxQUVZKzIyVmdqSlp3c2ZLR2pQWkxTdThPNUUvUFpDSEhESEd1QzVaWnlXR1AzTTZFQ2NBRkNOZTd4NzA5d0VheERCaUtuUlF0V2o2Q29zdk85M0tkIl19.eyJpc3MiOiJhdXRvbWF0aWMtdGVzdHMiLCJzdWIiOiJhdXRvbWF0aWMtdGVzdHMiLCJhdWQiOiJwbnQtbmV0IiwiaWF0IjoxNzQxMTA0MjY2LCJuYmYiOjE3NDExMDQyNjYsImV4cCI6MTc3MjY0MDI2Niwic2lnbmVkX2hlYWRlcnMiOnsiZGlnZXN0IjoiU0hBLTI1Nj0wNGEwZjdlMmJhZTE4YjViMWNhZGIyNzk0ODgyNzRiNTg0NmE5NzQzZTg2NTI3ZGE4NDg5ZjkzMTE3YTY0YzU0In19.tsbgKE6LdLmuZSWZWa6ILFmcWITQYp7rmi8RJJnHwa3DjnasJ7LZ6qDiJXlmdOzZ3sh3g5tLaAzt34I66ZS-SQdrCbuXuxA92j_Wsn38RnSrWL_0Z4w4qFEa3rZ48-pVyrkRPLwbHHy1EafGqRklZF4ekHvy7D4uAmGmceE-7LLk6w-780zVCYCVFI02G-OOfdK41VKN9peqrx4stqpgiy3tMpWy4Su6vAlzMYJKoFSaFW1tIKS1AIynrX04HdJS648N5VtJ9EXGN1LGfKeCNV8zDyl3C2iIGKS_HLoCD_8aORQ3ZP4dOBEEyyRbeAIxYaJIBHfIZJurVO31xsQmMg"/>
+                </filterHeadersList>
+            </_c>
+        </stubHeaderConfig>
+    </resourceConfig>
+</editableResource>

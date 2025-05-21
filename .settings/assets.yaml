@@ -515,6 +515,26 @@ resources:
             dependencies: 
               - path: /DemoAPI
                 type: tsqProject
+      - name: 'TELEMEDICINA.postman_collection (1).scm'
+        resources: 
+          - name: TELEMEDICINA.scm
+            resources: 
+              - name: Fase_1.scm
+                resources: 
+                  - name: 'Get Elaboration Status.opr'
+                    resources: 
+                      - name: 'Get Elaboration Status.tsq'
+                        type: com.ibm.rational.test.rit.testType
+                        dependencies: 
+                          - path: /DemoAPI
+                            type: tsqProject
+                  - name: 'Receive Bundle Endpoint.opr'
+                    resources: 
+                      - name: 'Receive Bundle Endpoint.tsq'
+                        type: com.ibm.rational.test.rit.testType
+                        dependencies: 
+                          - path: /DemoAPI
+                            type: tsqProject
       - name: addNumbers.wsc
         resources: 
           - name: addition.opr

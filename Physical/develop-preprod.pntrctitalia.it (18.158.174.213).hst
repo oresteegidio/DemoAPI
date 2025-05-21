@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editableResource createdTimestamp="1744203520387" createdUser="orest"
+    id="75246561:1961aa18be6:-7d7a"
+    selfDescribing="develop-preprod.pntrctitalia.it (18.158.174.213)"
+    type="host_machine_resource" updatedTimestamp="1744203520387"
+    updatedUser="orest" version="1.0">
+    <loggingConfiguration debug="false" resultWriterLoggingLevel="FULL" writeStubEventsToDB="false"/>
+    <resourceConfig host_address="18.158.174.213" user_host_name="develop-preprod.pntrctitalia.it">
+        <roles>
+            <identity name="ssh" port="22"/>
+        </roles>
+    </resourceConfig>
+</editableResource>
